@@ -15,7 +15,7 @@
         "export": "Xuất"
     },
     "background": {
-        "header": "Ảnh nền",
+        "header": "Hình nền",
         "select": {
             "header": "Chọn",
             "button": "Chọn",
@@ -70,14 +70,14 @@
         "header": "Văn bản",
         "name-tag": {
             "header": "Tên nhân vật",
-            "easy-switch": "Dùng công tắc chuyển nhanh"
+            "easy-switch": "Bật chế độ chuyển nhanh"
         },
         "dialogue": {
             "header": "Hộp lời thoại",
             "box-type": {
                 "header": "Kiểu hộp",
                 "default": "Mặc định",
-                "classic": "Cũ (trước Brand New World)",
+                "classic": "Cũ (trước bản cập nhật Brand New World)",
                 "mysekai": "MYSEKAI"
             },
             "font-size": "Cỡ phông chữ",
@@ -94,7 +94,7 @@
             "box-type": {
                 "header": "Kiểu khung",
                 "default": "Mặc định",
-                "classic": "Cũ (trước Brand New World)"
+                "classic": "Cũ (trước bản cập nhật Brand New World)"
             },
             "hide-everything": "Ẩn nhân vật và lời thoại"
         },
@@ -103,7 +103,7 @@
             "box-type": {
                 "header": "Kiểu nút",
                 "default": "Mặc định",
-                "classic": "Cũ (trước Brand New World)"
+                "classic": "Cũ (trước bản cập nhật Brand New World)"
             },
             "dialogue-box-visible": "Hiện hộp lời thoại"
         },
@@ -137,16 +137,16 @@
             "select-character": "Chọn nhân vật",
             "roleplay": {
                 "new": "Tạo mới",
-                "new-description": "Hãy đặt tên cho nhân vật.",
-                "delete-warn": "Nhân vật bạn sắp xóa có ảnh nhân vật đấy!! Bấm tiếp tục nghĩa là đống ảnh đó bay màu!",
+                "new-description": "Hãy đặt tên cho nhân vật này.",
+                "delete-warn": "Nhân vật bạn sắp xóa có Hình nhân vật đấy!! Bấm tiếp tục nghĩa là đống ảnh đó bay màu!",
                 "no-sprite-warn": "Nhân vật này hiện chưa có hình hài gì cả, hãy bắt đầu bằng cách thêm hình nào!"
             }
         },
         "sprite": {
-            "header": "Ảnh nhân vật",
-            "select-sprite": "Chọn ảnh nhân vật",
-            "add-sprite": "Thêm ảnh nhân vật",
-            "add-sprite-description": "Hãy đặt tên cho ảnh nhân vật này."
+            "header": "Hình nhân vật",
+            "select-sprite": "Chọn Hình nhân vật",
+            "add-sprite": "Thêm Hình nhân vật",
+            "add-sprite-description": "Hãy đặt tên cho Hình nhân vật này."
         },
         "costume": {
             "header": "Trang phục",
@@ -155,102 +155,102 @@
             "virtual": "Hiệu ứng ảo ảnh (hologram)"
         },
         "emotion": {
-            "header": "Emotion",
-            "rename-emotion": "Enter a nice name for this emotion. Leave blank to reset.",
-            "pose": "Pose",
-            "select-pose": "Select a pose",
-            "expression": "Expression",
-            "run-both": "Run Both",
-            "select-expression": "Select an expression"
+            "header": "Cảm xúc & Biểu cảm",
+            "rename-emotion": "Đặt một cái tên thật kêu cho cảm xúc này. Để trống để đặt lại về mặc định.",
+            "pose": "Dáng điệu (Pose)",
+            "select-pose": "Chọn dáng",
+            "expression": "Biểu cảm khuôn mặt",
+            "run-both": "Áp dụng cả hai",
+            "select-expression": "Chọn biểu cảm"
         },
         "transform": {
-            "header": "Transform",
-            "x-position": "X-Position",
-            "y-position": "Y-Position",
-            "scale": "Scale",
-            "rotation": "Rotation",
-            "opacity": "Opacity",
-            "blur": "Blur",
-            "layering": "Layer Order"
+            "header": "Biến đổi & Căn chỉnh",
+            "x-position": "Tọa độ X",
+            "y-position": "Tọa độ Y",
+            "scale": "Tỉ lệ (Kích thước)",
+            "rotation": "Góc xoay",
+            "opacity": "Độ mờ đục",
+            "blur": "Độ mờ nhòe",
+            "layering": "Thứ tự lớp"
         },
         "mouth": {
-            "header": "Mouth",
-            "ParamMouthForm": "Primary Shape",
-            "ParamMouthOpenY": "Opening",
-            "ParamMouthForm2": "Secondary Shape",
-            "ParamMouthScaleX": "X-Scale",
-            "ParamMouthScaleY": "Y-Scale",
-            "ParamMouthPositionY": "Y-Position",
-            "ParamMouthShadow": "Shadow"
+            "header": "Khuôn miệng",
+            "ParamMouthForm": "Hình dáng chính",
+            "ParamMouthOpenY": "Độ mở miệng",
+            "ParamMouthForm2": "Hình dáng phụ",
+            "ParamMouthScaleX": "Độ rộng (X)",
+            "ParamMouthScaleY": "Độ cao (Y)",
+            "ParamMouthPositionY": "Vị trí dọc (Y)",
+            "ParamMouthShadow": "Đổ bóng miệng"
         },
         "live2d": {
             "header": "Live2D",
             "parameters": {
-                "header": "Parameters",
-                "select-parameter": "Select a parameter",
-                "tooltip": "You can use your arrow keys to select and adjust parameters."
+                "header": "Thông số",
+                "select-parameter": "Chọn thông số cần chỉnh",
+                "tooltip": "Bạn có thể dùng các phím mũi tên để chọn và điều chỉnh thông số."
             },
-            "reapply-all": "Re-apply All",
-            "idle": "Idle Animation",
+            "reapply-all": "Áp dụng lại tất cả",
+            "idle": "Chuyển động lúc đứng yên (Idle)",
             "texture": {
-                "header": "Texture",
-                "get": "Get Texture",
-                "swap": "Swap Texture"
+                "header": "Texture (Họa phục)",
+                "get": "Trích xuất Texture",
+                "swap": "Thay thế Texture"
             },
             "import-export": {
-                "header": "Import/Export",
-                "description": "You can save the adjustments you made and load it to another model."
+                "header": "Nhập / Xuất cấu hình",
+                "description": "Bạn có thể lưu các thông số vừa tinh chỉnh và nạp sang cho model khác."
             },
             "emotion-copy": {
-                "header": "Emotion Copy",
-                "description": "This will copy all parameters from the expression and pose you set.",
-                "confirm-header": "Copied!",
-                "confirm-description": "The emotion parameters have successfully been copied."
+                "header": "Sao chép cảm xúc",
+                "description": "Thao tác này sẽ sao chép toàn bộ thông số từ dáng và biểu cảm bạn vừa thiết lập.",
+                "confirm-header": "Đã sao chép thành công!",
+                "confirm-description": "Toàn bộ thông số cảm xúc đã được sao chép vào bộ nhớ tạm."
             },
-            "show-live2d-parts": "Show Live2D Parts",
-            "access-live2d-parts": "You are about to access all parts of this model. Continue?"
+            "show-live2d-parts": "Hiện các bộ phận Live2D",
+            "access-live2d-parts": "Bạn sắp mở quyền can thiệp vào toàn bộ chi tiết giải phẫu của model này. Tiếp tục chứ?"
         },
-        "live2d-changed-warn": "You have custom Live2D parameter adjustments. Continuing will discard them!",
-        "long-wait": "If the model is taking too long to load, consider getting models from SEKAI Stories instead.",
-        "re-apply": "Re-apply",
-        "advanced": "Advanced"
+        "live2d-changed-warn": "Bạn có vài thông số Live2D tự chỉnh tay chưa lưu. Tiếp tục là đống đó bay màu luôn đấy!",
+        "long-wait": "Nếu model load lâu quá trời lâu, hãy chuyển sang lấy model từ SEKAI Stories cho nhanh nhé.",
+        "re-apply": "Áp dụng lại",
+        "advanced": "Nâng cao"
     },
     "experimental": {
-        "header": "Experimental",
-        "details": "If you don't see any changes, you may try refreshing the canvas.",
-        "refresh": "Refresh"
+        "header": "Tính năng thử nghiệm",
+        "details": "Nếu không thấy thay đổi gì trên màn hình, thử bấm tải lại canva xem sao nhé.",
+        "refresh": "Tải lại (F5)"
     },
     "clear": {
-        "message": "This will clear the whole canvas. Any progress will be lost!",
-        "start-blank": "Start with a blank canvas next time."
+        "message": "Bạn có chắc là muốn XÓA SẠCH TOÀN BỘ canva và LÀM LẠI TỪ ĐẦU không?",
+        "start-blank": "Lần tới cho mình xin một canva trống trơn nhé!"
     },
     "support": {
-        "header": "Support",
-        "report-header": "Found a bug?",
-        "report-details": "If you encounter any bugs or glitches, please report them on our GitHub repository.",
-        "report-button": "Report an issue",
-        "details": "If you enjoy using SEKAI Stories, you can support me through one of the following ways:",
-        "ko-fi-details": "Donations are optional! I will also be posting the website updates there as well.",
-        "github-details": "This project is completely open-source! You can report issues or open a pull request to contribute!",
-        "special-thanks-header": "Special Thanks",
-        "special-thanks-contributors-header": "Contributors",
-        "special-thanks-contributors-description": "Thank you to the people who contributed on this project! More features and translations have been added because of them!",
-        "special-thanks-description": "I would like to thank the owner of Sekai Viewer for allowing me to access their models through this site!",
-        "donate": "Donate"
+        "header": "Hỗ trợ",
+        "report-header": "Uhh... có lỗi à?",
+        "report-details": "Nếu bạn gặp lỗi nào, hãy báo lại trên kho dự án của chúng mình trên GitHub nhé.",
+        "report-button": "Báo cáo lỗi",
+        "details": "Nếu bạn thích dùng SEKAI Stories, bạn có thể hỗ trợ mình theo những cách sau:",
+        "ko-fi-details": "Ủng hộ (donate) hoàn toàn là tùy tâm nhé! Mình cũng sẽ đăng các bản cập nhật mới nhất của trang web lên đây.",
+        "github-details": "Dự án này hoàn toàn là mã nguồn mở! Bạn có thể báo cáo lỗi hoặc tạo Pull Request để cùng đóng góp xây dựng!",
+        "special-thanks-header": "Lời cảm ơn đặc biệt",
+        "special-thanks-contributors-header": "Những người đóng góp",
+        "special-thanks-contributors-description": "Xin gửi lời cảm ơn chân thành đến những bạn đã tham gia đóng góp cho dự án này! Nhờ có mọi người mà trang web mới có thêm nhiều tính năng và bản dịch phong phú như hôm nay!",
+        "special-thanks-description": "Mình cũng muốn gửi lời cảm ơn đặc biệt tới chủ sở hữu của Sekai Viewer vì đã cho phép mình truy cập và sử dụng kho model của họ trên trang web này!",
+        "donate": "Ủng hộ (Donate)"
     },
     "loadings": {
-        "please-wait": "Please wait...",
-        "loading-1": "Fetching model file for",
-        "loading-2": "Fetching motion file for",
-        "loading-3": "Fixing model data for",
-        "loading-4": "Loading textures for",
-        "loading-5": "Loading moc3 file for",
-        "loading-6": "Loading physics file for",
-        "loading-7": "Putting new model",
-        "failed-load": "Failed to load new model!"
+        "please-wait": "Chờ một chút nhé...",
+        "loading-1": "Đang tải tệp model cho",
+        "loading-2": "Đang tải toàn bộ animation cho",
+        "loading-3": "Đang sửa lại tệp model cho",
+        "loading-4": "Đang nạp texture cho",
+        "loading-5": "Đang nạp tệp moc3 cho",
+        "loading-6": "Đang nạp hệ thống vật lý cho",
+        "loading-7": "Được rồi, tớ đang ép nhân vật lên sân khấu đây",
+        "failed-load": "Tớ không thể... tải nhân vật này!"
     },
     "character": {
-        "none": "None",
+        "none": "Để trống?",
         "custom": "Custom",
         "ichika": "Ichika",
         "saki": "Saki",
@@ -278,223 +278,223 @@
         "luka": "Luka",
         "meiko": "MEIKO",
         "kaito": "KAITO",
-        "others": "Others"
+        "others": "Khác"
     },
     "group": {
-        "all": "All",
-        "colors": "Colors",
-        "bookmarks": "Bookmarks",
-        "general": "General",
+        "all": "Tất cả",
+        "colors": "Màu đơn sắc",
+        "bookmarks": "Đã lưu (Yêu thích)",
+        "general": "Chung (Đời thường)",
         "mmj": "MORE MORE JUMP!",
         "vbs": "Vivid BAD SQUAD",
         "wxs": "Wonderlands x Showtime",
         "n25": "Nightcord at 25:00",
         "ln": "Leo/need",
         "vs": "VIRTUAL SINGER",
-        "split": "Split Locations",
-        "temp": "Others",
-        "cards": "Cards"
+        "split": "Chia đôi khung nền",
+        "temp": "Khác",
+        "cards": "Hình nền từ thẻ nhân vật"
     },
     "settings": {
-        "header": "Settings",
-        "language": "Language",
-        "starting-box-type": "Starting Box Type",
-        "starting-box-type-description": "This will take effect after clearing the canvas.",
-        "auto-save": "Auto-save",
-        "auto-save-description": "Your work is automatically saved every 3 minutes. If something goes wrong, you can download the latest backup as a SEKAISCENE file.",
-        "auto-save-button": "Get last save",
-        "toggles": "Toggles",
-        "audio": "Enable audio",
-        "guidelines": "Show guidelines",
-        "experimental": "Show experimental",
-        "expand": "Expand all menu options",
-        "tutorial": "Tutorial",
-        "show-tutorial": "Show one more time",
-        "mental-health-window": "Show mental health warning",
-        "save-dialog": "Show save dialog",
-        "blank-canvas": "Start with a blank canvas",
-        "announcement": "Show announcement"
+        "header": "Cài đặt",
+        "language": "Ngôn ngữ",
+        "starting-box-type": "Kiểu hộp thoại và khung mặc định",
+        "starting-box-type-description": "Sẽ áp dụng cho các canva sau này.",
+        "auto-save": "Tự động lưu",
+        "auto-save-description": "Dự án của bạn sẽ được tự động lưu mỗi 3 phút. Nếu có chuyện gì xảy ra thì bạn có thể lưu lại bản sao dự phòng này thành một tệp SEKAISCENE.",
+        "auto-save-button": "Lấy bản sao cuối cùng",
+        "toggles": "Công tắc",
+        "audio": "Bật âm thanh",
+        "guidelines": "Xem lại hướng dẫn",
+        "experimental": "Hiện các tùy chọn thử nghiệm",
+        "expand": "Luôn mở bung toàn bộ menu",
+        "tutorial": "Hướng dẫn",
+        "show-tutorial": "Cho mình xem lại lần nữa",
+        "mental-health-window": "Hiện cảnh báo sức khỏe tâm thần",
+        "save-dialog": "Hiện hộp thoại lưu ảnh",
+        "blank-canvas": "Luôn tạo canva mới bằng canva trống",
+        "announcement": "Hiện tin tức gần đây"
     },
     "import-export": {
-        "header": "Import/Export",
-        "description": "Custom backgrounds and sprites are not included in this SEKAISCENE file.",
-        "import-prompt": "You have unsaved changes to your story. Do you wish to continue?"
+        "header": "Nhập / Xuất",
+        "description": "Hình nền và hình nhân vật tùy chỉnh sẽ KHÔNG ĐƯỢC LƯU vào tệp SEKAISCENE.",
+        "import-prompt": "Bạn có thay đổi CHƯA LƯU! Có chắc là bạn muốn tiếp tục nhập story không?"
     },
     "save": {
-        "header": "Save",
-        "note-1-desktop": "If the download hasn't started, right click the image below and save.",
-        "note-1-phone": "If the download hasn't started, tap and hold the image below and save.",
-        "note-2": "You can disable this window on Settings.",
-        "disable-dialog": "Don't show dialog next time."
+        "header": "Lưu",
+        "note-1-desktop": "Nếu như hình chưa được lưu tự động, thì nhấn chuột phải hình bên dưới và lưu bằng tay.",
+        "note-1-phone": "Nếu như hình chưa được lưu tự động, thì nhấn và giữ hình bên dưới và lưu bằng tay.",
+        "note-2": "Bạn có thể tắt hộp thoại này trong Cài đặt.",
+        "disable-dialog": "Đừng hiện cái này nữa nhé!"
     },
     "error": {
-        "header": "Error",
-        "import-scene-fail": "The canvas has been reset.",
-        "invalid-json": "Invalid JSON format",
-        "no-autosave": "No auto-save data found.",
-        "no-valid-models": "Add a new Live2D character model first.",
-        "not-an-image": "This is not an image.",
-        "default-scene-fail": "An error has occurred while loading the default scene.\nPlease use the clear button, refresh your browser, or clear your cookies.\nIf the problem persists, please report this bug on GitHub.",
-        "name-tag-inputs-limit": "The limit is 2 to 6 inputs for name tag.",
-        "background-bookmark": "You cannot set a bookmark for a custom background.",
-        "hide-everything-warning": "The \"Hide models and dialogue\" option under Scene Text is enabled.\nPlease disable this option on Text Menu.",
-        "low-opacity-visible": "The model's opacity is near-zero.\nJust letting you know～",
-        "character-name-empty": "The character name cannot be empty.",
-        "character-name-invalid": "This character name is not allowed. Please choose a different one.",
-        "character-name-exists": "This character name already exists.",
-        "sprite-name-empty": "The sprite name cannot be empty.",
-        "sprite-name-invalid": "This sprite name is not allowed. Please choose a different one.",
-        "sprite-name-exists": "This sprite name already exists.",
-        "nonexistent-character": "This character does not exist.",
-        "nonexistent-sprite": "This sprite does not exist."
+        "header": "Lỗi",
+        "import-scene-fail": "Canva đã được đặt lại.",
+        "invalid-json": "Bạn có chọn đúng tệp định dạng JSON chuẩn không đấy?",
+        "no-autosave": "Hiện không có bản sao lưu tự động nào cả.",
+        "no-valid-models": "Hãy thêm một model nhân vật Live2D trước đã nhé.",
+        "not-an-image": "Bạn có chắc mình đang tải ảnh lên không đấy?",
+        "default-scene-fail": "Đã xảy ra lỗi khi đang tải cảnh mặc định.\nHãy thử bấm nút Xóa, tải lại trình duyệt, hoặc xóa cookie xem sao nhé.\nNếu vẫn bị lỗi, hãy báo lại cho chúng mình trên GitHub nha!",
+        "name-tag-inputs-limit": "Số lượng ô nhập tên nhân vật chỉ từ 2 đến 6 ô thôi.",
+        "background-bookmark": "Bạn không thể đánh dấu lưu hình nền tự tải lên được đâu.",
+        "hide-everything-warning": "Tùy chọn \"Ẩn nhân vật và lời thoại\" trong mục Tên phân cảnh đang được bật.\nHãy tắt tùy chọn này trong Menu Văn bản trước nhé.",
+        "low-opacity-visible": "Độ mờ đục của model này đang gần bằng 0 rồi đó.\nNhắc nhẹ để bạn biết thôi à～",
+        "character-name-empty": "Tên nhân vật không được để trống đâu nha.",
+        "character-name-invalid": "Tên nhân vật này không hợp lệ rồi. Hãy chọn một tên khác nhé.",
+        "character-name-exists": "Tên nhân vật này đã có rồi nè.",
+        "sprite-name-empty": "Tên ảnh nhân vật không được để trống đâu.",
+        "sprite-name-invalid": "Tên ảnh nhân vật này không hợp lệ rồi. Hãy chọn một tên khác nhé.",
+        "sprite-name-exists": "Tên ảnh nhân vật này đã tồn tại rồi.",
+        "nonexistent-character": "Nhân vật này không tồn tại.",
+        "nonexistent-sprite": "Ảnh nhân vật này không tồn tại."
     },
     "error-boundary": {
-        "unexpected": "An unexpected error has occurred",
-        "inconvenience": "We're really sorry for the inconvenience.",
-        "clear-cookies": "Please clear the cookies, refresh the page, and try again.",
-        "report-issue": "If the problem persists, please report this issue on GitHub.",
-        "automatic-save": "Your work is automatically saved.",
-        "save-data": "Save it as soon as possible.",
-        "save-data-button": "Save Data",
-        "report-issue-button": "Report Issue",
-        "copied-to-clipboard": "The traceback has been copied. Please paste it when making a report."
+        "unexpected": "App vừa bị bay màu do một lỗi ngoại lệ chúng mình không ngờ tới.",
+        "inconvenience": "Chúng mình xin lỗi vì sự bất tiện này.",
+        "clear-cookies": "Hãy thử xóa cookies, tải lại trang và thử lại lần nữa.",
+        "report-issue": "Nếu vẫn bị lỗi, hãy báo lại cho chúng mình trên GitHub nhé!",
+        "automatic-save": "Dự án của bạn đã được lưu tự động.",
+        "save-data": "Bạn hãy lưu tay càng sớm càng tốt.",
+        "save-data-button": "Lưu dự án",
+        "report-issue-button": "Báo cáo lỗi",
+        "copied-to-clipboard": "Dấu vết truy lỗi đã được chép vào bảng nhớ tạm. Nhớ dán vào báo cáo lỗi bạn sẽ gửi đi nhé!"
     },
     "mental-health": {
-        "header": "It's okay to reach out",
-        "details": "What you are feeling matters and you are not alone. If you're going through a difficult moment, you can click the button below to find resources and people who are there to help.",
-        "settings-details": "You can disable this message on Settings.",
-        "button": "Take me there"
+        "header": "Luôn có người sẵn sàng lắng nghe bạn",
+        "details": "Những cảm xúc bạn đang trải qua đều đáng được quan tâm, và bạn không hề đơn độc. Nếu đang trải qua giai đoạn khó khăn, bạn có thể nhấn vào nút bên dưới để tìm kiếm sự hỗ trợ và kết nối với những người luôn sẵn lòng giúp đỡ bạn.",
+        "settings-details": "(Bạn có thể tắt thông báo này trong phần Cài đặt)",
+        "button": "Dẫn mình tới đó đi"
     },
     "tutorial": {
         "initial-setup": {
             "paragraph-1": "Kéo thả thanh trượt này cho tới khi bạn không thấy vùng màu đỏ nữa",
-            "paragraph-2": "Bạn có thể điều chỉnh lại cái này trên Menu Văn bản."
+            "paragraph-2": "Bạn có thể tìm lại tùy chọn này trong menu Văn bản."
         },
         "welcome": {
-            "header": "Welcome to SEKAI Stories!",
-            "intro-header": "This window will guide you on how to use this site.",
-            "paragraph-1": "If you are familiar with this application, you can close this window.",
-            "paragraph-2": "You can also open this tutorial at any time on Settings.",
-            "confirm-first-time": "It's my first time here"
+            "header": "Chào mừng bạn đến với SEKAI Stories!",
+            "intro-header": "Cửa sổ này sẽ hướng dẫn bạn cách sử dụng trang web này nha.",
+            "paragraph-1": "Nếu bạn đã quen thuộc với trang web này rồi thì có thể đóng cửa sổ này lại nhé.",
+            "paragraph-2": "Bạn cũng có thể mở lại phần hướng dẫn này bất cứ lúc nào trong mục Cài đặt.",
+            "confirm-first-time": "Đây là lần đầu mình đến đây"
         },
         "video": {
-            "header": "You can watch the whole tutorial on YouTube!",
-            "youtube": "Open YouTube"
+            "header": "Bạn có thể xem toàn bộ video hướng dẫn trên YouTube!",
+            "youtube": "Mở YouTube"
         },
         "menu-navigation": {
-            "header": "These will navigate you between menus!"
+            "header": "Các nút này sẽ giúp bạn chuyển đổi qua lại giữa các menu!"
         },
         "background-menu": {
-            "header": "Background Menu",
+            "header": "Menu Hình nền",
             "select-upload": {
-                "header": "Select and Upload",
-                "paragraph": "Select backgrounds from Project SEKAI or upload your own.",
+                "header": "Chọn và Tải lên",
+                "paragraph": "Chọn các hình nền từ Project SEKAI hoặc tự tải lên hình ảnh của riêng bạn.",
                 "split": {
-                    "header": "Split Location",
-                    "paragraph": "You can also do Split Location, showing two in one background."
+                    "header": "Chia đôi khung nền",
+                    "paragraph": "Bạn cũng có thể bật chế độ này để hiển thị hai cảnh cùng lúc trong một khung hình."
                 }
             },
             "lighting": {
-                "header": "Lighting",
-                "paragraph": "Change the color tint of the foreground according to your background setting."
+                "header": "Đánh sáng",
+                "paragraph": "Đổi tông màu của tiền cảnh sao cho hòa hợp với ánh sáng nền cảnh của bạn."
             },
             "filters": {
-                "header": "Filters",
-                "paragraph": "Add filters to the whole canvas."
+                "header": "Bộ lọc",
+                "paragraph": "Áp dụng các hiệu ứng bộ lọc lên toàn bộ canva."
             }
         },
         "text-menu": {
-            "header": "Text Menu",
+            "header": "Menu Văn bản",
             "name-tag": {
-                "header": "Name Tag",
-                "paragraph": "This is where you put the names of your character.",
+                "header": "Tên nhân vật",
+                "paragraph": "Đây là nơi bạn đặt tên cho nhân vật đang nói chuyện.",
                 "easy-switch": {
-                    "header": "Easy Switch",
-                    "paragraph": "Easy Switch will allow you to switch between two characters without retyping."
+                    "header": "Chuyển nhanh",
+                    "paragraph": "Tính năng Chuyển nhanh giúp bạn đổi qua lại giữa các nhân vật mà không cần gõ lại tên từ đầu."
                 }
             },
             "dialogue": {
-                "header": "Dialogue",
-                "paragraph": "This is where you put the dialogue of what the character is speaking."
+                "header": "Lời thoại",
+                "paragraph": "Đây là nơi bạn nhập lời thoại của nhân vật."
             },
             "scene-text": {
-                "header": "Scene Text",
-                "paragraph": "The time and location of the scene you're making, usually seen at the start of every PJSK story."
+                "header": "Tên phân cảnh",
+                "paragraph": "Hiển thị địa điểm và thời gian của phân cảnh bạn tạo, thường thấy ở đầu mỗi câu chuyện trong PJSK."
             },
             "choices-text": {
-                "header": "Choices Text",
-                "paragraph": "Two button choices you can edit, usually seen during OG Miku's conversations."
+                "header": "Các nút lựa chọn",
+                "paragraph": "Hai nút lựa chọn để bạn tùy ý chỉnh nội dung, thường thấy trong các phân cảnh nói chuyện với Miku mở đầu game."
             }
         },
         "model-menu": {
-            "header": "Model & Sprites Menu",
+            "header": "Menu Nhân vật & Sprite",
             "selected-layer": {
-                "header": "Selected Layer",
-                "paragraph": "All the models shown on your work are located here. You can select and do some tweaking.",
+                "header": "Lớp đang chọn",
+                "paragraph": "Tất cả các model nhân vật xuất hiện trên canva đều nằm ở đây. Bạn có thể chọn từng lớp để tinh chỉnh.",
                 "add-model": {
-                    "header": "Add Model",
-                    "paragraph": "You can add a new Live2D model character and upload your own image."
+                    "header": "Thêm nhân vật",
+                    "paragraph": "Bạn có thể thêm model nhân vật Live2D mới hoặc tự tải ảnh của mình lên."
                 },
                 "upload-sprite": {
-                    "header": "Upload PNG Sprite",
-                    "paragraph": "Upload your own PNG sprite."
+                    "header": "Tải ảnh PNG lên",
+                    "paragraph": "Tự tải ảnh sprite PNG của riêng bạn."
                 },
                 "hide-layer": {
-                    "header": "Visibility",
-                    "paragraph": "Toggles the layer's visibility."
+                    "header": "Hiển thị",
+                    "paragraph": "Bật/tắt khả năng hiển thị của lớp này."
                 },
                 "remove-layer": {
-                    "header": "Remove Layer",
-                    "paragraph": "Deletes the selected layer."
+                    "header": "Xóa lớp",
+                    "paragraph": "Xóa lớp nhân vật đang được chọn."
                 }
             },
             "transform": {
-                "header": "Transform",
-                "paragraph": "This will allow you to move, change the size, and hide the layer you selected."
+                "header": "Căn chỉnh",
+                "paragraph": "Cho phép bạn di chuyển vị trí, thay đổi kích thước và ẩn lớp nhân vật đang chọn."
             },
             "character": {
-                "header": "Character",
-                "paragraph": "If the selected model is a Live2D, you can select characters from the PJSK Cast."
+                "header": "Nhân vật",
+                "paragraph": "Nếu lớp đang chọn là model Live2D, bạn có thể chọn các nhân vật trong dàn cast của PJSK."
             },
             "costume": {
-                "header": "Costume",
-                "paragraph": "Once you have selected a character, you can select a costume of your choice."
+                "header": "Trang phục",
+                "paragraph": "Sau khi đã chọn nhân vật, bạn có thể chọn bộ trang phục yêu thích cho họ."
             },
             "emotion": {
-                "header": "Emotion",
+                "header": "Cảm xúc & Biểu cảm",
                 "pose": {
-                    "header": "Pose",
-                    "paragraph": "Changes the pose of the character selected."
+                    "header": "Dáng điệu (Pose)",
+                    "paragraph": "Thay đổi dáng đứng/tư thế của nhân vật đang chọn."
                 },
                 "expression": {
-                    "header": "Expression",
-                    "paragraph": "Changes the facial expression of the character selected."
+                    "header": "Biểu cảm",
+                    "paragraph": "Thay đổi biểu cảm nét mặt của nhân vật đang chọn."
                 }
             },
             "mouth": {
-                "header": "Mouth",
-                "paragraph": "Allows you to change and tweak the opening and shape of the mouth of a Live2D model."
+                "header": "Khuôn miệng",
+                "paragraph": "Cho phép bạn điều chỉnh độ mở và hình dáng khẩu hình miệng của model Live2D."
             },
             "live-2d": {
                 "header": "Live2D",
-                "paragraph": "You can customize your own poses by tweaking the Live2D parameters and pause the idle animation.",
+                "paragraph": "Bạn có thể tự tạo dáng riêng bằng cách chỉnh thông số Live2D và tạm dừng chuyển động lúc đứng yên.",
                 "import-export": {
-                    "header": "Import/Export",
-                    "paragraph": "You can also save the adjustments you made and load it to another model."
+                    "header": "Nhập / Xuất",
+                    "paragraph": "Bạn cũng có thể lưu lại các thông số vừa điều chỉnh và áp dụng sang cho model khác."
                 },
                 "emotion-copy": {
-                    "header": "Emotion Copy",
-                    "paragraph": "Copies the Live2D Parameters of the current expression and pose you set."
+                    "header": "Sao chép cảm xúc",
+                    "paragraph": "Sao chép các thông số Live2D từ dáng và biểu cảm hiện tại mà bạn vừa thiết lập."
                 }
             }
         },
         "save": {
-            "header": "Once you're done, save your work!",
-            "scene-paragraph": "This will allow you to save and load your entire scene as an editable format."
+            "header": "Làm xong xuôi rồi thì nhớ lưu lại thành quả nhé!",
+            "scene-paragraph": "Tính năng này cho phép bạn lưu và tải lại toàn bộ cảnh dưới dạng tệp có thể chỉnh sửa tiếp sau này."
         },
         "ending": {
-            "header": "And that's it!",
-            "paragraph": "If you wish to repeat this, you can access them back on Settings."
+            "header": "Vậy là hết rồi đó!",
+            "paragraph": "Nếu muốn xem lại hướng dẫn này bất kỳ lúc nào, bạn chỉ cần vào lại mục Cài đặt nha."
         }
     }
 }
