@@ -99,7 +99,7 @@
             "hide-everything": "Ẩn nhân vật và lời thoại"
         },
         "choices-text": {
-            "header": "Các nút Lựa chọn",
+            "header": "Các nút lựa chọn",
             "box-type": {
                 "header": "Kiểu nút",
                 "default": "Mặc định",
@@ -138,15 +138,15 @@
             "roleplay": {
                 "new": "Tạo mới",
                 "new-description": "Hãy đặt tên cho nhân vật này.",
-                "delete-warn": "Nhân vật bạn sắp xóa có Hình nhân vật đấy!! Bấm tiếp tục nghĩa là đống ảnh đó bay màu!",
+                "delete-warn": "Nhân vật bạn sắp xóa có hình nhân vật đấy!! Bấm tiếp tục nghĩa là đống hình đó bay màu!",
                 "no-sprite-warn": "Nhân vật này hiện chưa có hình hài gì cả, hãy bắt đầu bằng cách thêm hình nào!"
             }
         },
         "sprite": {
             "header": "Hình nhân vật",
-            "select-sprite": "Chọn Hình nhân vật",
-            "add-sprite": "Thêm Hình nhân vật",
-            "add-sprite-description": "Hãy đặt tên cho Hình nhân vật này."
+            "select-sprite": "Chọn hình nhân vật",
+            "add-sprite": "Thêm hình nhân vật",
+            "add-sprite-description": "Hãy đặt tên cho hình nhân vật này."
         },
         "costume": {
             "header": "Trang phục",
@@ -164,7 +164,7 @@
             "select-expression": "Chọn biểu cảm"
         },
         "transform": {
-            "header": "Biến đổi & Căn chỉnh",
+            "header": "Biến đổi và căn chỉnh",
             "x-position": "Tọa độ X",
             "y-position": "Tọa độ Y",
             "scale": "Tỉ lệ (Kích thước)",
@@ -193,49 +193,49 @@
             "reapply-all": "Áp dụng lại tất cả",
             "idle": "Chuyển động lúc đứng yên (Idle)",
             "texture": {
-                "header": "Texture (Họa phục)",
+                "header": "Texture (họa phục)",
                 "get": "Trích xuất Texture",
                 "swap": "Thay thế Texture"
             },
             "import-export": {
                 "header": "Nhập / Xuất cấu hình",
-                "description": "Bạn có thể lưu các thông số vừa tinh chỉnh và nạp sang cho model khác."
+                "description": "Bạn cũng có thể lưu lại các thông số vừa điều chỉnh và áp dụng sang cho model khác."
             },
             "emotion-copy": {
                 "header": "Sao chép cảm xúc",
                 "description": "Thao tác này sẽ sao chép toàn bộ thông số từ dáng và biểu cảm bạn vừa thiết lập.",
                 "confirm-header": "Đã sao chép thành công!",
-                "confirm-description": "Toàn bộ thông số cảm xúc đã được sao chép vào bộ nhớ tạm."
+                "confirm-description": "Toàn bộ thông số cảm xúc đã được sao chép vào bảng nhớ tạm."
             },
             "show-live2d-parts": "Hiện các bộ phận Live2D",
             "access-live2d-parts": "Bạn sắp mở quyền can thiệp vào toàn bộ chi tiết giải phẫu của model này. Tiếp tục chứ?"
         },
         "live2d-changed-warn": "Bạn có vài thông số Live2D tự chỉnh tay chưa lưu. Tiếp tục là đống đó bay màu luôn đấy!",
-        "long-wait": "Nếu model load lâu quá trời lâu, hãy chuyển sang lấy model từ SEKAI Stories cho nhanh nhé.",
+        "long-wait": "Nếu bạn chờ dài cổ mà model vẫn chưa tải xong, hãy chuyển sang lấy model từ SEKAI Stories cho nhanh nhé.",
         "re-apply": "Áp dụng lại",
         "advanced": "Nâng cao"
     },
     "experimental": {
         "header": "Tính năng thử nghiệm",
-        "details": "Nếu không thấy thay đổi gì trên màn hình, thử bấm tải lại canva xem sao nhé.",
+        "details": "Nếu không thấy thay đổi gì trên màn hình, thử bấm tải lại canvas xem sao nhé.",
         "refresh": "Tải lại (F5)"
     },
     "clear": {
-        "message": "Bạn có chắc là muốn XÓA SẠCH TOÀN BỘ canva và LÀM LẠI TỪ ĐẦU không?",
-        "start-blank": "Lần tới cho mình xin một canva trống trơn nhé!"
+        "message": "Bạn có chắc là muốn XÓA SẠCH TOÀN BỘ canvas và LÀM LẠI TỪ ĐẦU không?",
+        "start-blank": "Lần tới cho mình xin một canvas trống trơn nhé!"
     },
     "support": {
         "header": "Hỗ trợ",
         "report-header": "Uhh... có lỗi à?",
         "report-details": "Nếu bạn gặp lỗi nào, hãy báo lại trên kho dự án của chúng mình trên GitHub nhé.",
         "report-button": "Báo cáo lỗi",
-        "details": "Nếu bạn thích dùng SEKAI Stories, bạn có thể hỗ trợ mình theo những cách sau:",
-        "ko-fi-details": "Ủng hộ (donate) hoàn toàn là tùy tâm nhé! Mình cũng sẽ đăng các bản cập nhật mới nhất của trang web lên đây.",
+        "details": "Nếu bạn thích dùng SEKAI Stories, bạn có thể hỗ trợ chúng mình theo những cách sau:",
+        "ko-fi-details": "Ủng hộ (donate) hoàn toàn là tùy tâm nhé! Chúng mình cũng sẽ đăng các bản cập nhật mới nhất của trang web lên đây.",
         "github-details": "Dự án này hoàn toàn là mã nguồn mở! Bạn có thể báo cáo lỗi hoặc tạo Pull Request để cùng đóng góp xây dựng!",
         "special-thanks-header": "Lời cảm ơn đặc biệt",
         "special-thanks-contributors-header": "Những người đóng góp",
         "special-thanks-contributors-description": "Xin gửi lời cảm ơn chân thành đến những bạn đã tham gia đóng góp cho dự án này! Nhờ có mọi người mà trang web mới có thêm nhiều tính năng và bản dịch phong phú như hôm nay!",
-        "special-thanks-description": "Mình cũng muốn gửi lời cảm ơn đặc biệt tới chủ sở hữu của Sekai Viewer vì đã cho phép mình truy cập và sử dụng kho model của họ trên trang web này!",
+        "special-thanks-description": "Chúng mình cũng muốn gửi lời cảm ơn đặc biệt tới chủ sở hữu của Sekai Viewer vì đã cho phép chúng mình truy cập và sử dụng kho model của họ trên trang web này!",
         "donate": "Ủng hộ (Donate)"
     },
     "loadings": {
@@ -246,8 +246,8 @@
         "loading-4": "Đang nạp texture cho",
         "loading-5": "Đang nạp tệp moc3 cho",
         "loading-6": "Đang nạp hệ thống vật lý cho",
-        "loading-7": "Được rồi, tớ đang ép nhân vật lên sân khấu đây",
-        "failed-load": "Tớ không thể... tải nhân vật này!"
+        "loading-7": "Được rồi, chúng mình đang đưa nhân vật lên sân khấu đây",
+        "failed-load": "Không thể... tải nhân vật này!"
     },
     "character": {
         "none": "Để trống?",
@@ -283,8 +283,8 @@
     "group": {
         "all": "Tất cả",
         "colors": "Màu đơn sắc",
-        "bookmarks": "Đã lưu (Yêu thích)",
-        "general": "Chung (Đời thường)",
+        "bookmarks": "Đã lưu (yêu thích)",
+        "general": "Chung (đời thường)",
         "mmj": "MORE MORE JUMP!",
         "vbs": "Vivid BAD SQUAD",
         "wxs": "Wonderlands x Showtime",
@@ -299,7 +299,7 @@
         "header": "Cài đặt",
         "language": "Ngôn ngữ",
         "starting-box-type": "Kiểu hộp thoại và khung mặc định",
-        "starting-box-type-description": "Sẽ áp dụng cho các canva sau này.",
+        "starting-box-type-description": "Sẽ áp dụng cho các canvas sau này.",
         "auto-save": "Tự động lưu",
         "auto-save-description": "Dự án của bạn sẽ được tự động lưu mỗi 3 phút. Nếu có chuyện gì xảy ra thì bạn có thể lưu lại bản sao dự phòng này thành một tệp SEKAISCENE.",
         "auto-save-button": "Lấy bản sao cuối cùng",
@@ -312,13 +312,13 @@
         "show-tutorial": "Cho mình xem lại lần nữa",
         "mental-health-window": "Hiện cảnh báo sức khỏe tâm thần",
         "save-dialog": "Hiện hộp thoại lưu ảnh",
-        "blank-canvas": "Luôn tạo canva mới bằng canva trống",
+        "blank-canvas": "Luôn tạo canvas mới bằng canvas trống",
         "announcement": "Hiện tin tức gần đây"
     },
     "import-export": {
         "header": "Nhập / Xuất",
         "description": "Hình nền và hình nhân vật tùy chỉnh sẽ KHÔNG ĐƯỢC LƯU vào tệp SEKAISCENE.",
-        "import-prompt": "Bạn có thay đổi CHƯA LƯU! Có chắc là bạn muốn tiếp tục nhập story không?"
+        "import-prompt": "Bạn có thay đổi CHƯA LƯU! Có chắc là bạn muốn tiếp tục nhập phân cảnh không?"
     },
     "save": {
         "header": "Lưu",
@@ -329,12 +329,12 @@
     },
     "error": {
         "header": "Lỗi",
-        "import-scene-fail": "Canva đã được đặt lại.",
+        "import-scene-fail": "Canvas đã được đặt lại.",
         "invalid-json": "Bạn có chọn đúng tệp định dạng JSON chuẩn không đấy?",
         "no-autosave": "Hiện không có bản sao lưu tự động nào cả.",
         "no-valid-models": "Hãy thêm một model nhân vật Live2D trước đã nhé.",
         "not-an-image": "Bạn có chắc mình đang tải ảnh lên không đấy?",
-        "default-scene-fail": "Đã xảy ra lỗi khi đang tải cảnh mặc định.\nHãy thử bấm nút Xóa, tải lại trình duyệt, hoặc xóa cookie xem sao nhé.\nNếu vẫn bị lỗi, hãy báo lại cho chúng mình trên GitHub nha!",
+        "default-scene-fail": "Đã xảy ra lỗi khi đang tải phân cảnh mặc định.\nHãy thử bấm nút Xóa, tải lại trình duyệt, hoặc xóa cookie xem sao nhé.\nNếu vẫn bị lỗi, hãy báo lại cho chúng mình trên GitHub nha!",
         "name-tag-inputs-limit": "Số lượng ô nhập tên nhân vật chỉ từ 2 đến 6 ô thôi.",
         "background-bookmark": "Bạn không thể đánh dấu lưu hình nền tự tải lên được đâu.",
         "hide-everything-warning": "Tùy chọn \"Ẩn nhân vật và lời thoại\" trong mục Tên phân cảnh đang được bật.\nHãy tắt tùy chọn này trong Menu Văn bản trước nhé.",
@@ -342,11 +342,11 @@
         "character-name-empty": "Tên nhân vật không được để trống đâu nha.",
         "character-name-invalid": "Tên nhân vật này không hợp lệ rồi. Hãy chọn một tên khác nhé.",
         "character-name-exists": "Tên nhân vật này đã có rồi nè.",
-        "sprite-name-empty": "Tên ảnh nhân vật không được để trống đâu.",
-        "sprite-name-invalid": "Tên ảnh nhân vật này không hợp lệ rồi. Hãy chọn một tên khác nhé.",
-        "sprite-name-exists": "Tên ảnh nhân vật này đã tồn tại rồi.",
+        "sprite-name-empty": "Tên hình nhân vật không được để trống đâu.",
+        "sprite-name-invalid": "Tên hình nhân vật này không hợp lệ rồi. Hãy chọn một tên khác nhé.",
+        "sprite-name-exists": "Tên hình nhân vật này đã tồn tại rồi.",
         "nonexistent-character": "Nhân vật này không tồn tại.",
-        "nonexistent-sprite": "Ảnh nhân vật này không tồn tại."
+        "nonexistent-sprite": "Hình nhân vật này không tồn tại."
     },
     "error-boundary": {
         "unexpected": "App vừa bị bay màu do một lỗi ngoại lệ chúng mình không ngờ tới.",
@@ -388,10 +388,10 @@
             "header": "Menu Hình nền",
             "select-upload": {
                 "header": "Chọn và Tải lên",
-                "paragraph": "Chọn các hình nền từ Project SEKAI hoặc tự tải lên hình ảnh của riêng bạn.",
+                "paragraph": "Chọn các hình nền từ Project SEKAI hoặc tự tải lên hình nền của riêng bạn.",
                 "split": {
                     "header": "Chia đôi khung nền",
-                    "paragraph": "Bạn cũng có thể bật chế độ này để hiển thị hai cảnh cùng lúc trong một khung hình."
+                    "paragraph": "Bạn cũng có thể bật chế độ này để hiển thị hai phân cảnh cùng lúc trong một khung hình."
                 }
             },
             "lighting": {
@@ -400,7 +400,7 @@
             },
             "filters": {
                 "header": "Bộ lọc",
-                "paragraph": "Áp dụng các hiệu ứng bộ lọc lên toàn bộ canva."
+                "paragraph": "Áp dụng các hiệu ứng bộ lọc lên toàn bộ canvas."
             }
         },
         "text-menu": {
@@ -414,7 +414,7 @@
                 }
             },
             "dialogue": {
-                "header": "Lời thoại",
+                "header": "Hộp lời thoại",
                 "paragraph": "Đây là nơi bạn nhập lời thoại của nhân vật."
             },
             "scene-text": {
@@ -427,17 +427,17 @@
             }
         },
         "model-menu": {
-            "header": "Menu Nhân vật & Sprite",
+            "header": "Menu Nhân vật",
             "selected-layer": {
                 "header": "Lớp đang chọn",
-                "paragraph": "Tất cả các model nhân vật xuất hiện trên canva đều nằm ở đây. Bạn có thể chọn từng lớp để tinh chỉnh.",
+                "paragraph": "Tất cả các model nhân vật xuất hiện trên canvas đều nằm ở đây. Bạn có thể chọn từng lớp để tinh chỉnh.",
                 "add-model": {
                     "header": "Thêm nhân vật",
                     "paragraph": "Bạn có thể thêm model nhân vật Live2D mới hoặc tự tải ảnh của mình lên."
                 },
                 "upload-sprite": {
-                    "header": "Tải ảnh PNG lên",
-                    "paragraph": "Tự tải ảnh sprite PNG của riêng bạn."
+                    "header": "Tải hình nhân vật lên",
+                    "paragraph": "Tự tải hình nhân vật PNG của riêng bạn."
                 },
                 "hide-layer": {
                     "header": "Hiển thị",
@@ -449,7 +449,7 @@
                 }
             },
             "transform": {
-                "header": "Căn chỉnh",
+                "header": "Biến đổi và căn chỉnh",
                 "paragraph": "Cho phép bạn di chuyển vị trí, thay đổi kích thước và ẩn lớp nhân vật đang chọn."
             },
             "character": {
@@ -479,7 +479,7 @@
                 "header": "Live2D",
                 "paragraph": "Bạn có thể tự tạo dáng riêng bằng cách chỉnh thông số Live2D và tạm dừng chuyển động lúc đứng yên.",
                 "import-export": {
-                    "header": "Nhập / Xuất",
+                    "header": "Nhập / Xuất cấu hình",
                     "paragraph": "Bạn cũng có thể lưu lại các thông số vừa điều chỉnh và áp dụng sang cho model khác."
                 },
                 "emotion-copy": {
@@ -490,7 +490,7 @@
         },
         "save": {
             "header": "Làm xong xuôi rồi thì nhớ lưu lại thành quả nhé!",
-            "scene-paragraph": "Tính năng này cho phép bạn lưu và tải lại toàn bộ cảnh dưới dạng tệp có thể chỉnh sửa tiếp sau này."
+            "scene-paragraph": "Tính năng này cho phép bạn lưu và tải lại toàn bộ phân cảnh dưới dạng tệp có thể chỉnh sửa tiếp sau này."
         },
         "ending": {
             "header": "Vậy là hết rồi đó!",
