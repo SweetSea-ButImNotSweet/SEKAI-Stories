@@ -1,0 +1,500 @@
+{
+    "global": {
+        "toggles": "Công tắc",
+        "close": "Đóng",
+        "clear-ok": "Xóa",
+        "copy": "Sao chép",
+        "continue-ok": "Tiếp tục",
+        "cancel": "Hủy bỏ",
+        "next": "Tiếp",
+        "input": "Nhập",
+        "adjust": "Điều chỉnh",
+        "enter-value": "Nhập một giá trị.",
+        "visible": "Hiện",
+        "import": "Nhập",
+        "export": "Xuất"
+    },
+    "background": {
+        "header": "Ảnh nền",
+        "select": {
+            "header": "Chọn",
+            "button": "Chọn",
+            "split-location": "Chia đôi khung nền (khi 2 nhân vật gọi điện/nhắn tin)",
+            "upload": "Tải lên",
+            "upload-info": "Nhớ là ảnh phải đúng kích thước tỉ lệ 16:9 để tránh ảnh bị cắt góc!"
+        },
+        "lighting": {
+            "header": "Đánh sáng",
+            "preset": "Mẫu",
+            "red": "Đỏ",
+            "green": "Lục",
+            "blue": "Lam",
+            "brightness": "Độ sáng",
+            "saturation": "Độ bão hòa",
+            "presets": {
+                "select-preset": "Chọn mẫu",
+                "default": "Mặc định",
+                "warm": "Ấm",
+                "sunset": "Hoàng hôn",
+                "night": "Ban đêm",
+                "off": "Tắt đèn",
+                "bright": "Sáng",
+                "silhouette": "Bóng đen",
+                "custom-preset": "Mẫu tự làm"
+            }
+        },
+        "filters": {
+            "header": "Bộ lọc",
+            "flashback": "Hồi tưởng",
+            "monochrome": "Đen trắng",
+            "monochrome-settings": {
+                "contrast": "Độ tương phản"
+            },
+            "sick": "Bị ốm",
+            "vignette": "Làm tối góc (Vignette)",
+            "drooping-lines": "Vạch sọc u ám",
+            "pov": "Góc nhìn (POV)",
+            "pov-settings": {
+                "zoom": "Thu phóng",
+                "povx": "Tọa độ X",
+                "povy": "Tọa độ Y"
+            },
+            "background-blur": "Làm mờ nền",
+            "background-blur-settings": {
+                "bluriness": "Độ mờ"
+            },
+            "sekai-transition": "Chuyển cảnh SEKAI"
+        }
+    },
+    "text": {
+        "header": "Văn bản",
+        "name-tag": {
+            "header": "Tên nhân vật",
+            "easy-switch": "Dùng công tắc chuyển nhanh"
+        },
+        "dialogue": {
+            "header": "Hộp lời thoại",
+            "box-type": {
+                "header": "Kiểu hộp",
+                "default": "Mặc định",
+                "classic": "Cũ (trước Brand New World)",
+                "mysekai": "MYSEKAI"
+            },
+            "font-size": "Cỡ phông chữ",
+            "enter-font-size": "Hãy nhập cỡ phông.",
+            "add-symbol": "Thêm biểu tượng"
+        },
+        "scene-text": {
+            "header": "Tên phân cảnh",
+            "variant": {
+                "header": "Vị trí",
+                "middle": "Chính giữa",
+                "top-left": "Góc trên bên trái"
+            },
+            "box-type": {
+                "header": "Kiểu khung",
+                "default": "Mặc định",
+                "classic": "Cũ (trước Brand New World)"
+            },
+            "hide-everything": "Ẩn nhân vật và lời thoại"
+        },
+        "choices-text": {
+            "header": "Các nút Lựa chọn",
+            "box-type": {
+                "header": "Kiểu nút",
+                "default": "Mặc định",
+                "classic": "Cũ (trước Brand New World)"
+            },
+            "dialogue-box-visible": "Hiện hộp lời thoại"
+        },
+        "y-offset": {
+            "header": "Hiệu chỉnh vị trí chữ",
+            "details": "Bạn có thể cần hiệu chỉnh lại vị trí chữ nếu chữ không được hiển thị đúng cách."
+        },
+        "toggles": "Công tắc"
+    },
+    "model": {
+        "header": "Nhân vật",
+        "selected-layer": {
+            "header": "Lớp đang chọn",
+            "layer": "Lớp",
+            "add-model": {
+                "header": "Thêm nhân vật",
+                "description": "Bạn muốn lấy model nhân vật từ nguồn nào?",
+                "sekai": "sekai.best",
+                "sekai-description": "Khuyên dùng, có thể chọn model mới nhất (xin cảm ơn Sekai Viewer).",
+                "static": "SEKAI Stories",
+                "static-description": "Dự phòng khi máy chủ sekai.best (Sekai Viewer) bị bay màu.",
+                "roleplay-sprites": "Lấy từ kho nhân vật của bạn",
+                "roleplay-sprites-description": "Chọn, tạo, sửa, xóa nhân vật của bạn theo ý thích.",
+                "upload-image": "Tự tải ảnh lên",
+                "upload-image-description": "(Cái lựa chọn này có khác gì lựa chọn số 3 không đấy?)"
+            },
+            "delete-model-warn": "Đây là lớp duy nhất rồi, không xóa được đâu!"
+        },
+        "character": {
+            "header": "Nhân vật",
+            "select-character": "Chọn nhân vật",
+            "roleplay": {
+                "new": "Tạo mới",
+                "new-description": "Hãy đặt tên cho nhân vật.",
+                "delete-warn": "Nhân vật bạn sắp xóa có ảnh nhân vật đấy!! Bấm tiếp tục nghĩa là đống ảnh đó bay màu!",
+                "no-sprite-warn": "Nhân vật này hiện chưa có hình hài gì cả, hãy bắt đầu bằng cách thêm hình nào!"
+            }
+        },
+        "sprite": {
+            "header": "Ảnh nhân vật",
+            "select-sprite": "Chọn ảnh nhân vật",
+            "add-sprite": "Thêm ảnh nhân vật",
+            "add-sprite-description": "Hãy đặt tên cho ảnh nhân vật này."
+        },
+        "costume": {
+            "header": "Trang phục",
+            "live2d-issue": "Trang phục này có thể đang thiếu vài chi tiết.",
+            "live2d-issue-github": "Xem báo cáo lỗi đã biết tại đây.",
+            "virtual": "Hiệu ứng ảo ảnh (hologram)"
+        },
+        "emotion": {
+            "header": "Emotion",
+            "rename-emotion": "Enter a nice name for this emotion. Leave blank to reset.",
+            "pose": "Pose",
+            "select-pose": "Select a pose",
+            "expression": "Expression",
+            "run-both": "Run Both",
+            "select-expression": "Select an expression"
+        },
+        "transform": {
+            "header": "Transform",
+            "x-position": "X-Position",
+            "y-position": "Y-Position",
+            "scale": "Scale",
+            "rotation": "Rotation",
+            "opacity": "Opacity",
+            "blur": "Blur",
+            "layering": "Layer Order"
+        },
+        "mouth": {
+            "header": "Mouth",
+            "ParamMouthForm": "Primary Shape",
+            "ParamMouthOpenY": "Opening",
+            "ParamMouthForm2": "Secondary Shape",
+            "ParamMouthScaleX": "X-Scale",
+            "ParamMouthScaleY": "Y-Scale",
+            "ParamMouthPositionY": "Y-Position",
+            "ParamMouthShadow": "Shadow"
+        },
+        "live2d": {
+            "header": "Live2D",
+            "parameters": {
+                "header": "Parameters",
+                "select-parameter": "Select a parameter",
+                "tooltip": "You can use your arrow keys to select and adjust parameters."
+            },
+            "reapply-all": "Re-apply All",
+            "idle": "Idle Animation",
+            "texture": {
+                "header": "Texture",
+                "get": "Get Texture",
+                "swap": "Swap Texture"
+            },
+            "import-export": {
+                "header": "Import/Export",
+                "description": "You can save the adjustments you made and load it to another model."
+            },
+            "emotion-copy": {
+                "header": "Emotion Copy",
+                "description": "This will copy all parameters from the expression and pose you set.",
+                "confirm-header": "Copied!",
+                "confirm-description": "The emotion parameters have successfully been copied."
+            },
+            "show-live2d-parts": "Show Live2D Parts",
+            "access-live2d-parts": "You are about to access all parts of this model. Continue?"
+        },
+        "live2d-changed-warn": "You have custom Live2D parameter adjustments. Continuing will discard them!",
+        "long-wait": "If the model is taking too long to load, consider getting models from SEKAI Stories instead.",
+        "re-apply": "Re-apply",
+        "advanced": "Advanced"
+    },
+    "experimental": {
+        "header": "Experimental",
+        "details": "If you don't see any changes, you may try refreshing the canvas.",
+        "refresh": "Refresh"
+    },
+    "clear": {
+        "message": "This will clear the whole canvas. Any progress will be lost!",
+        "start-blank": "Start with a blank canvas next time."
+    },
+    "support": {
+        "header": "Support",
+        "report-header": "Found a bug?",
+        "report-details": "If you encounter any bugs or glitches, please report them on our GitHub repository.",
+        "report-button": "Report an issue",
+        "details": "If you enjoy using SEKAI Stories, you can support me through one of the following ways:",
+        "ko-fi-details": "Donations are optional! I will also be posting the website updates there as well.",
+        "github-details": "This project is completely open-source! You can report issues or open a pull request to contribute!",
+        "special-thanks-header": "Special Thanks",
+        "special-thanks-contributors-header": "Contributors",
+        "special-thanks-contributors-description": "Thank you to the people who contributed on this project! More features and translations have been added because of them!",
+        "special-thanks-description": "I would like to thank the owner of Sekai Viewer for allowing me to access their models through this site!",
+        "donate": "Donate"
+    },
+    "loadings": {
+        "please-wait": "Please wait...",
+        "loading-1": "Fetching model file for",
+        "loading-2": "Fetching motion file for",
+        "loading-3": "Fixing model data for",
+        "loading-4": "Loading textures for",
+        "loading-5": "Loading moc3 file for",
+        "loading-6": "Loading physics file for",
+        "loading-7": "Putting new model",
+        "failed-load": "Failed to load new model!"
+    },
+    "character": {
+        "none": "None",
+        "custom": "Custom",
+        "ichika": "Ichika",
+        "saki": "Saki",
+        "honami": "Honami",
+        "shiho": "Shiho",
+        "minori": "Minori",
+        "haruka": "Haruka",
+        "airi": "Airi",
+        "shizuku": "Shizuku",
+        "kohane": "Kohane",
+        "an": "An",
+        "akito": "Akito",
+        "touya": "Toya",
+        "tsukasa": "Tsukasa",
+        "emu": "Emu",
+        "nene": "Nene",
+        "rui": "Rui",
+        "kanade": "Kanade",
+        "mafuyu": "Mafuyu",
+        "ena": "Ena",
+        "mizuki": "Mizuki",
+        "miku": "Miku",
+        "rin": "Rin",
+        "len": "Len",
+        "luka": "Luka",
+        "meiko": "MEIKO",
+        "kaito": "KAITO",
+        "others": "Others"
+    },
+    "group": {
+        "all": "All",
+        "colors": "Colors",
+        "bookmarks": "Bookmarks",
+        "general": "General",
+        "mmj": "MORE MORE JUMP!",
+        "vbs": "Vivid BAD SQUAD",
+        "wxs": "Wonderlands x Showtime",
+        "n25": "Nightcord at 25:00",
+        "ln": "Leo/need",
+        "vs": "VIRTUAL SINGER",
+        "split": "Split Locations",
+        "temp": "Others",
+        "cards": "Cards"
+    },
+    "settings": {
+        "header": "Settings",
+        "language": "Language",
+        "starting-box-type": "Starting Box Type",
+        "starting-box-type-description": "This will take effect after clearing the canvas.",
+        "auto-save": "Auto-save",
+        "auto-save-description": "Your work is automatically saved every 3 minutes. If something goes wrong, you can download the latest backup as a SEKAISCENE file.",
+        "auto-save-button": "Get last save",
+        "toggles": "Toggles",
+        "audio": "Enable audio",
+        "guidelines": "Show guidelines",
+        "experimental": "Show experimental",
+        "expand": "Expand all menu options",
+        "tutorial": "Tutorial",
+        "show-tutorial": "Show one more time",
+        "mental-health-window": "Show mental health warning",
+        "save-dialog": "Show save dialog",
+        "blank-canvas": "Start with a blank canvas",
+        "announcement": "Show announcement"
+    },
+    "import-export": {
+        "header": "Import/Export",
+        "description": "Custom backgrounds and sprites are not included in this SEKAISCENE file.",
+        "import-prompt": "You have unsaved changes to your story. Do you wish to continue?"
+    },
+    "save": {
+        "header": "Save",
+        "note-1-desktop": "If the download hasn't started, right click the image below and save.",
+        "note-1-phone": "If the download hasn't started, tap and hold the image below and save.",
+        "note-2": "You can disable this window on Settings.",
+        "disable-dialog": "Don't show dialog next time."
+    },
+    "error": {
+        "header": "Error",
+        "import-scene-fail": "The canvas has been reset.",
+        "invalid-json": "Invalid JSON format",
+        "no-autosave": "No auto-save data found.",
+        "no-valid-models": "Add a new Live2D character model first.",
+        "not-an-image": "This is not an image.",
+        "default-scene-fail": "An error has occurred while loading the default scene.\nPlease use the clear button, refresh your browser, or clear your cookies.\nIf the problem persists, please report this bug on GitHub.",
+        "name-tag-inputs-limit": "The limit is 2 to 6 inputs for name tag.",
+        "background-bookmark": "You cannot set a bookmark for a custom background.",
+        "hide-everything-warning": "The \"Hide models and dialogue\" option under Scene Text is enabled.\nPlease disable this option on Text Menu.",
+        "low-opacity-visible": "The model's opacity is near-zero.\nJust letting you know～",
+        "character-name-empty": "The character name cannot be empty.",
+        "character-name-invalid": "This character name is not allowed. Please choose a different one.",
+        "character-name-exists": "This character name already exists.",
+        "sprite-name-empty": "The sprite name cannot be empty.",
+        "sprite-name-invalid": "This sprite name is not allowed. Please choose a different one.",
+        "sprite-name-exists": "This sprite name already exists.",
+        "nonexistent-character": "This character does not exist.",
+        "nonexistent-sprite": "This sprite does not exist."
+    },
+    "error-boundary": {
+        "unexpected": "An unexpected error has occurred",
+        "inconvenience": "We're really sorry for the inconvenience.",
+        "clear-cookies": "Please clear the cookies, refresh the page, and try again.",
+        "report-issue": "If the problem persists, please report this issue on GitHub.",
+        "automatic-save": "Your work is automatically saved.",
+        "save-data": "Save it as soon as possible.",
+        "save-data-button": "Save Data",
+        "report-issue-button": "Report Issue",
+        "copied-to-clipboard": "The traceback has been copied. Please paste it when making a report."
+    },
+    "mental-health": {
+        "header": "It's okay to reach out",
+        "details": "What you are feeling matters and you are not alone. If you're going through a difficult moment, you can click the button below to find resources and people who are there to help.",
+        "settings-details": "You can disable this message on Settings.",
+        "button": "Take me there"
+    },
+    "tutorial": {
+        "initial-setup": {
+            "paragraph-1": "Kéo thả thanh trượt này cho tới khi bạn không thấy vùng màu đỏ nữa",
+            "paragraph-2": "Bạn có thể điều chỉnh lại cái này trên Menu Văn bản."
+        },
+        "welcome": {
+            "header": "Welcome to SEKAI Stories!",
+            "intro-header": "This window will guide you on how to use this site.",
+            "paragraph-1": "If you are familiar with this application, you can close this window.",
+            "paragraph-2": "You can also open this tutorial at any time on Settings.",
+            "confirm-first-time": "It's my first time here"
+        },
+        "video": {
+            "header": "You can watch the whole tutorial on YouTube!",
+            "youtube": "Open YouTube"
+        },
+        "menu-navigation": {
+            "header": "These will navigate you between menus!"
+        },
+        "background-menu": {
+            "header": "Background Menu",
+            "select-upload": {
+                "header": "Select and Upload",
+                "paragraph": "Select backgrounds from Project SEKAI or upload your own.",
+                "split": {
+                    "header": "Split Location",
+                    "paragraph": "You can also do Split Location, showing two in one background."
+                }
+            },
+            "lighting": {
+                "header": "Lighting",
+                "paragraph": "Change the color tint of the foreground according to your background setting."
+            },
+            "filters": {
+                "header": "Filters",
+                "paragraph": "Add filters to the whole canvas."
+            }
+        },
+        "text-menu": {
+            "header": "Text Menu",
+            "name-tag": {
+                "header": "Name Tag",
+                "paragraph": "This is where you put the names of your character.",
+                "easy-switch": {
+                    "header": "Easy Switch",
+                    "paragraph": "Easy Switch will allow you to switch between two characters without retyping."
+                }
+            },
+            "dialogue": {
+                "header": "Dialogue",
+                "paragraph": "This is where you put the dialogue of what the character is speaking."
+            },
+            "scene-text": {
+                "header": "Scene Text",
+                "paragraph": "The time and location of the scene you're making, usually seen at the start of every PJSK story."
+            },
+            "choices-text": {
+                "header": "Choices Text",
+                "paragraph": "Two button choices you can edit, usually seen during OG Miku's conversations."
+            }
+        },
+        "model-menu": {
+            "header": "Model & Sprites Menu",
+            "selected-layer": {
+                "header": "Selected Layer",
+                "paragraph": "All the models shown on your work are located here. You can select and do some tweaking.",
+                "add-model": {
+                    "header": "Add Model",
+                    "paragraph": "You can add a new Live2D model character and upload your own image."
+                },
+                "upload-sprite": {
+                    "header": "Upload PNG Sprite",
+                    "paragraph": "Upload your own PNG sprite."
+                },
+                "hide-layer": {
+                    "header": "Visibility",
+                    "paragraph": "Toggles the layer's visibility."
+                },
+                "remove-layer": {
+                    "header": "Remove Layer",
+                    "paragraph": "Deletes the selected layer."
+                }
+            },
+            "transform": {
+                "header": "Transform",
+                "paragraph": "This will allow you to move, change the size, and hide the layer you selected."
+            },
+            "character": {
+                "header": "Character",
+                "paragraph": "If the selected model is a Live2D, you can select characters from the PJSK Cast."
+            },
+            "costume": {
+                "header": "Costume",
+                "paragraph": "Once you have selected a character, you can select a costume of your choice."
+            },
+            "emotion": {
+                "header": "Emotion",
+                "pose": {
+                    "header": "Pose",
+                    "paragraph": "Changes the pose of the character selected."
+                },
+                "expression": {
+                    "header": "Expression",
+                    "paragraph": "Changes the facial expression of the character selected."
+                }
+            },
+            "mouth": {
+                "header": "Mouth",
+                "paragraph": "Allows you to change and tweak the opening and shape of the mouth of a Live2D model."
+            },
+            "live-2d": {
+                "header": "Live2D",
+                "paragraph": "You can customize your own poses by tweaking the Live2D parameters and pause the idle animation.",
+                "import-export": {
+                    "header": "Import/Export",
+                    "paragraph": "You can also save the adjustments you made and load it to another model."
+                },
+                "emotion-copy": {
+                    "header": "Emotion Copy",
+                    "paragraph": "Copies the Live2D Parameters of the current expression and pose you set."
+                }
+            }
+        },
+        "save": {
+            "header": "Once you're done, save your work!",
+            "scene-paragraph": "This will allow you to save and load your entire scene as an editable format."
+        },
+        "ending": {
+            "header": "And that's it!",
+            "paragraph": "If you wish to repeat this, you can access them back on Settings."
+        }
+    }
+}
