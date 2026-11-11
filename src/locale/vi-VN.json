@@ -128,7 +128,7 @@
                 "roleplay-sprites": "Lấy từ kho nhân vật của bạn",
                 "roleplay-sprites-description": "Chọn, tạo, sửa, xóa nhân vật của bạn theo ý thích.",
                 "upload-image": "Tự tải ảnh lên",
-                "upload-image-description": "(Cái lựa chọn này có khác gì lựa chọn số 3 không đấy?)"
+                "upload-image-description": "Tải nhanh một ảnh tính làm hình nhân vật"
             },
             "delete-model-warn": "Đây là lớp duy nhất rồi, không xóa được đâu!"
         },
