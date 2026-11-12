@@ -242,8 +242,9 @@ def convert_unity_to_img(new_backgrounds=None):
         sys.exit(1)
 
     if IS_LINUX:
+        wine_prefix = Path.home() / ".wine_dotnet8"
         run(
-            f'env WINEPREFIX={Path.home()}.wine_dotnet8 wine "{cli_path}" "{NEW_DIR if new_backgrounds else BUNDLES_DIR}" "{EXPORT_DIR}" --game ProjectSekai --unity_version "{UNITY_VERSION}"'
+            f'env WINEPREFIX="{wine_prefix}" wine "{cli_path}" "{NEW_DIR if new_backgrounds else BUNDLES_DIR}" "{EXPORT_DIR}" --game ProjectSekai --unity_version "{UNITY_VERSION}"'
         )
     else:
         run(
