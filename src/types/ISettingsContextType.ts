@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 import { IEasyNameTag } from "./IEasyNameTag";
 import { IRoleplaySpriteCharacters } from "./IRoleplaySprites";
+import { ICustomDefaultScene } from "./ICustomDefaultScene";
 
 export default interface ISettingsContextType {
     openedSidebar: string;
@@ -39,6 +40,10 @@ export default interface ISettingsContextType {
     setAudio: Dispatch<SetStateAction<boolean>>;
     startingBoxType: "default" | "classic";
     setStartingBoxType: Dispatch<SetStateAction<"default" | "classic">>;
+    customDefaultScene: ICustomDefaultScene | null;
+    setCustomDefaultScene: Dispatch<SetStateAction<ICustomDefaultScene | null>>;
+    customDefaultSceneBool: boolean;
+    setCustomDefaultSceneBool: Dispatch<SetStateAction<boolean>>;
     loading: number;
     setLoading: Dispatch<SetStateAction<number>>;
     roleplaySprites: IRoleplaySpriteCharacters;

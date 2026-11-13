@@ -26,6 +26,7 @@ import {
     sceneCenterTextsSetupData,
     sceneTopLeftTexts,
 } from "../data/TextSetups";
+import { ICustomDefaultScene } from "../types/ICustomDefaultScene";
 
 interface GetDefaultSceneProps {
     app: PIXI.Application | undefined;
@@ -33,6 +34,8 @@ interface GetDefaultSceneProps {
     setLoadingMessage: Dispatch<SetStateAction<string>>;
     setLoading: Dispatch<SetStateAction<number>>;
     blankCanvas: boolean;
+    customCanvas: boolean;
+    customScene: ICustomDefaultScene | null;
 }
 
 const LoadInitialScene = (scene: string): InitialScene => {
@@ -41,15 +44,28 @@ const LoadInitialScene = (scene: string): InitialScene => {
     ];
 };
 
+const LoadCustomScene = (
+    scene: ICustomDefaultScene,
+    fallback: InitialScene,
+): InitialScene => {
+    return {
+        ...fallback,
+        nameTag: scene.nameTag,
+        text: scene.dialogue,
+    };
+};
+
 const firstSplitBackgroundFilename = "/background_compressed/bg_e000303.jpg";
 const secondSplitBackgroundFilename = "/background_compressed/bg_e000403.jpg";
 
 const LoadBackground = async (
     container: PIXI.Container,
     childAt: number,
-    fileName: string,
+    file: string | Blob,
 ): Promise<IBackground> => {
     const backgroundContainer = new PIXI.Container();
+    const fileName =
+        typeof file === "string" ? file : URL.createObjectURL(file);
     const backgroundSprite = await getBackground(fileName);
     backgroundContainer.addChild(backgroundSprite);
     container.addChildAt(backgroundContainer, childAt);
@@ -57,7 +73,7 @@ const LoadBackground = async (
     return {
         backgroundContainer: backgroundContainer,
         filename: fileName,
-        upload: false,
+        upload: typeof file !== "string",
     };
 };
 
@@ -124,7 +140,7 @@ const LoadSplitBackground = async (
 const LoadModel = async (
     container: PIXI.Container,
     childAt: number,
-    file: string,
+    file: string | Blob,
     x: number,
     y: number,
     scale?: number,
@@ -135,7 +151,12 @@ const LoadModel = async (
 }> => {
     const modelWrapper = new PIXI.Container();
     const modelContainer = new PIXI.Container();
-    const texture = await PIXI.Texture.fromURL(`/img/characters/${file}.png`);
+    const textureSource =
+        typeof file === "string"
+            ? `/img/characters/${file}.png`
+            : URL.createObjectURL(file);
+    const texture = await PIXI.Texture.fromURL(textureSource);
+    if (typeof file !== "string") URL.revokeObjectURL(textureSource);
     const sprite = new PIXI.Sprite(texture);
     modelContainer.addChildAt(sprite, 0);
     modelWrapper.addChildAt(modelContainer, 0);
@@ -168,7 +189,8 @@ const LoadModel = async (
                 character: "custom",
                 root: modelContainer,
                 model: sprite,
-                modelName: file,
+                modelName:
+                    typeof file === "string" ? file : "custom-default-scene",
                 modelX: modelContainer.x,
                 modelY: modelContainer.y,
                 modelScale: modelContainer.scale.x,
@@ -435,11 +457,25 @@ export const LoadScene = async ({
     setLoadingMessage,
     setLoading,
     blankCanvas,
+    customCanvas,
+    customScene,
 }: GetDefaultSceneProps) => {
     const scene = CheckSceneCategory(blankCanvas);
 
     setLoading(0);
-    const initialScene: InitialScene = LoadInitialScene(scene);
+    const defaultScene = LoadInitialScene(scene);
+    const initialScene: InitialScene =
+        customCanvas && customScene
+            ? LoadCustomScene(customScene, defaultScene)
+            : defaultScene;
+    const backgroundFile =
+        customCanvas && customScene?.background
+            ? customScene.background
+            : initialScene.background;
+    const modelFile =
+        customCanvas && customScene?.sprite
+            ? customScene.sprite
+            : initialScene.pngName;
 
     const canvas = document.getElementById("canvas") as HTMLCanvasElement;
 
@@ -470,11 +506,7 @@ export const LoadScene = async ({
     setLoading(30);
     // Load Background
     setLoadingMessage("Adding background...");
-    const background = await LoadBackground(
-        filterContainer,
-        0,
-        initialScene["background"],
-    );
+    const background = await LoadBackground(filterContainer, 0, backgroundFile);
 
     setLoading(40);
     // Load Split Background
@@ -487,7 +519,7 @@ export const LoadScene = async ({
     const { model, modelWrapper, lighting } = await LoadModel(
         filterContainer,
         2,
-        initialScene.pngName,
+        modelFile,
         initialScene.modelX,
         initialScene.modelY,
         initialScene.modelScale ?? 1,

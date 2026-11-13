@@ -317,6 +317,11 @@ input[type=checkbox]:checked::before {
   background-size: 70%;
 }
 
+input[type=checkbox]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 .checkbox {
   display: flex;
   align-items: center;

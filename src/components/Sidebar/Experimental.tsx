@@ -25,10 +25,15 @@ const Experimental: React.FC = () => {
     if (!scene || !softError || !settings) throw new Error("Context not found");
     const { loadingMessage, setLoadingMessage } = scene;
     const { setErrorInformation } = softError;
-    const { loading, setLoading } = settings;
+    const { loading, setLoading, customDefaultScene, customDefaultSceneBool } =
+        settings;
     const [number, setNumber] = useState(0);
     const [image, setImage] = useState<Blob | null>(null);
     const [rpImage, setRPImage] = useState<Blob | null>(null);
+    const [customSceneImageUrls, setCustomSceneImageUrls] = useState<{
+        background: string | null;
+        sprite: string | null;
+    }>({ background: null, sprite: null });
     const [group, setGroup] = useState("test__group");
     const [name, setName] = useState("test__name");
     const [roleplaySprites, setRoleplaySprites] =
@@ -59,6 +64,25 @@ const Experimental: React.FC = () => {
     useEffect(() => {
         localforage.setItem("test__custom_sprites", roleplaySprites);
     }, [roleplaySprites]);
+
+    useEffect(() => {
+        const background = customDefaultScene?.background;
+        const sprite = customDefaultScene?.sprite;
+        const backgroundUrl = background
+            ? URL.createObjectURL(background)
+            : null;
+        const spriteUrl = sprite ? URL.createObjectURL(sprite) : null;
+
+        setCustomSceneImageUrls({
+            background: backgroundUrl,
+            sprite: spriteUrl,
+        });
+
+        return () => {
+            if (backgroundUrl) URL.revokeObjectURL(backgroundUrl);
+            if (spriteUrl) URL.revokeObjectURL(spriteUrl);
+        };
+    }, [customDefaultScene?.background, customDefaultScene?.sprite]);
 
     const handleUpsertSprite = (blob: Blob) => {
         const newSprite: IRoleplaySprite = {
@@ -340,6 +364,47 @@ const Experimental: React.FC = () => {
                         ))}
                     </div>
                 )}
+            </div>
+            <div className="option">
+                <h2>Custom Default Scene Test</h2>
+                <div className="option__content">
+                    <p>
+                        Status:{" "}
+                        {customDefaultSceneBool ? "Enabled" : "Disabled"}
+                    </p>
+                    {customDefaultScene ? (
+                        <div className="flex-vertical">
+                            {customSceneImageUrls.background ? (
+                                <div>
+                                    <h3>Background</h3>
+                                    <img
+                                        src={customSceneImageUrls.background}
+                                        className="width-100"
+                                        alt="Custom scene background"
+                                    />
+                                </div>
+                            ) : (
+                                <p>Background is null.</p>
+                            )}
+                            {customSceneImageUrls.sprite ? (
+                                <div>
+                                    <h3>Sprite</h3>
+                                    <img
+                                        src={customSceneImageUrls.sprite}
+                                        className="width-100"
+                                        alt="Custom scene sprite"
+                                    />
+                                </div>
+                            ) : (
+                                <p>Sprite is null.</p>
+                            )}
+                            <h3>{customDefaultScene.nameTag}</h3>
+                            <p>{customDefaultScene.dialogue}</p>
+                        </div>
+                    ) : (
+                        <p>No custom default scene configured.</p>
+                    )}
+                </div>
             </div>
         </div>
     );

@@ -6,6 +6,7 @@ import { IBackgroundBookmark } from "../types/IBackgroundBookmark";
 import { SoftErrorContext } from "./SoftErrorContext";
 import { IRoleplaySpriteCharacters } from "../types/IRoleplaySprites";
 import localforage from "localforage";
+import { ICustomDefaultScene } from "../types/ICustomDefaultScene";
 
 interface SidebarProviderProps {
     children: React.ReactNode;
@@ -42,6 +43,10 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
         "default" | "classic"
     >("default");
     const [loading, setLoading] = useState<number>(0);
+    const [customDefaultSceneBool, setCustomDefaultSceneBool] =
+        useState<boolean>(false);
+    const [customDefaultScene, setCustomDefaultScene] =
+        useState<ICustomDefaultScene | null>(null);
     const [roleplaySprites, setRoleplaySprites] =
         useState<IRoleplaySpriteCharacters>([]);
     const [settingsLoaded, setSettingsLoaded] = useState<boolean>(false);
@@ -82,6 +87,12 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
         if (blankCanvasCookie === "true") {
             setBlankCanvas(true);
         }
+        const customDefaultSceneCookie = localStorage.getItem(
+            "customDefaultSceneBool",
+        );
+        if (customDefaultSceneCookie === "true") {
+            setCustomDefaultSceneBool(true);
+        }
         const easySwitchEnabled = localStorage.getItem("easySwitchEnabled");
         if (easySwitchEnabled === "true") {
             setEasySwitch(true);
@@ -118,13 +129,22 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
             );
             localStorage.setItem("startingBoxType", "default");
         }
-        localforage.getItem("roleplaySprites").then((value) => {
-            if (value) {
-                setRoleplaySprites(value as IRoleplaySpriteCharacters);
-            }
-        });
-
-        setSettingsLoaded(true);
+        Promise.all([
+            localforage.getItem("roleplaySprites"),
+            localforage.getItem("customDefaultScene"),
+        ])
+            .then(([sprites, customScene]) => {
+                if (sprites) {
+                    setRoleplaySprites(sprites as IRoleplaySpriteCharacters);
+                }
+                setCustomDefaultScene(
+                    customScene as ICustomDefaultScene | null,
+                );
+            })
+            .catch((loadError) => {
+                console.error("Failed to load saved settings:", loadError);
+            })
+            .finally(() => setSettingsLoaded(true));
     }, []);
 
     useEffect(() => {
@@ -170,6 +190,10 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
                 setAudio,
                 startingBoxType,
                 setStartingBoxType,
+                customDefaultSceneBool,
+                setCustomDefaultSceneBool,
+                customDefaultScene,
+                setCustomDefaultScene,
                 loading,
                 roleplaySprites,
                 setRoleplaySprites,
