@@ -40,6 +40,7 @@ For creativity, you can translate the flavor texts or add your own at [`src/comp
 | Filipino               | fil-PH      | lezzthanthree                         | 100.00%       | 
 | French                 | fr-FR       | 39Choko                               | 80.34%        | 
 | Malay                  | ms-MY       | fab144                                | 69.30%        | 
+| Vietnamese             | vi-VN       | SweetSea-ButImNotSweet                | 100.00%       | 
 | Polish                 | pl-PL       | counter185, KrajeQQ                   | 74.34%        |
 | Thai                   | th-TH       | aungpaos                              | 97.36%        |
 | S. Chinese             | zh-CN       | MiddleRed, SteveLF, emptylight370     | 91.80%        |

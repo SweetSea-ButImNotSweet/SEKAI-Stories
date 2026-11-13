@@ -42,6 +42,12 @@ const Translators: React.FC<TranslatorsProps> = ({ lng }) => {
                 link: "https://github.com/lezzthanthree",
             },
         ],
+        vi: [
+            {
+                img: "https://avatars.githubusercontent.com/u/106439598?v=4",
+                link: "https://github.com/SweetSea-ButImNotSweet",
+            },
+        ],
         ms: [
             {
                 img: "https://avatars.githubusercontent.com/u/58261459?v=4",
