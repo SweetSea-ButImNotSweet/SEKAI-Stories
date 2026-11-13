@@ -464,18 +464,17 @@ export const LoadScene = async ({
 
     setLoading(0);
     const defaultScene = LoadInitialScene(scene);
-    const initialScene: InitialScene =
-        customCanvas && customScene
-            ? LoadCustomScene(customScene, defaultScene)
-            : defaultScene;
-    const backgroundFile =
-        customCanvas && customScene?.background
-            ? customScene.background
-            : initialScene.background;
-    const modelFile =
-        customCanvas && customScene?.sprite
-            ? customScene.sprite
-            : initialScene.pngName;
+    const validCustomScene =
+        customCanvas && customScene?.background && customScene.sprite;
+    const initialScene: InitialScene = validCustomScene
+        ? LoadCustomScene(customScene, defaultScene)
+        : defaultScene;
+    const backgroundFile = validCustomScene
+        ? (customScene?.background ?? initialScene.background)
+        : initialScene.background;
+    const modelFile = validCustomScene
+        ? (customScene?.sprite ?? initialScene.pngName)
+        : initialScene.pngName;
 
     const canvas = document.getElementById("canvas") as HTMLCanvasElement;
 
