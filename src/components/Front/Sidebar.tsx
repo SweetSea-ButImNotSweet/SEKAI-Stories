@@ -13,10 +13,17 @@ const Sidebar: React.FC = () => {
     if (!scene || !settings) return;
 
     const { loadingMessage } = scene;
-    const { openedSidebar } = settings;
+    const { openedSidebar, sidebarWidth } = settings;
 
     return (
-        <div id="sidebar">
+        <div
+            id="sidebar"
+            style={
+                {
+                    "--sidebar-width": `${sidebarWidth}px`,
+                } as React.CSSProperties
+            }
+        >
             {loadingMessage === "" && (
                 <>
                     {openedSidebar == "background" && <BackgroundSidebar />}

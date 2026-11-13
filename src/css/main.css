@@ -773,11 +773,15 @@ select:disabled {
 }
 @media (width > 768px) {
   #sidebar {
+    position: relative;
     height: 100dvh;
+    width: var(--sidebar-width, 300px);
     min-width: 300px;
-    max-width: 300px;
+    max-width: min(675px, 45vw);
+    flex: 0 0 auto;
     overflow-y: scroll;
     overflow-x: hidden;
+    transition: none;
   }
 }
 @media (width <= 768px) {
@@ -789,6 +793,23 @@ select:disabled {
 #sidebar h1,
 #sidebar p {
   word-wrap: break-all;
+}
+
+.sidebar-resize-handle {
+  display: none;
+}
+@media (width > 768px) {
+  .sidebar-resize-handle {
+    display: flex;
+    width: 8px;
+    cursor: col-resize;
+    touch-action: none;
+    background-color: #77eedd;
+  }
+  .sidebar-resize-handle:hover, .sidebar-resize-handle:focus-visible {
+    background-color: #00ccbb;
+    outline: none;
+  }
 }
 
 .sidebar__select {

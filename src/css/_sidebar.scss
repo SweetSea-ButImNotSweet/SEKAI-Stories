@@ -2,11 +2,15 @@
     padding: 25px;
     background-color: $light-gray;
     @media (width > 768px) {
+        position: relative;
         height: 100dvh;
+        width: var(--sidebar-width, 300px);
         min-width: 300px;
-        max-width: 300px;
+        max-width: min(675px, 45vw);
+        flex: 0 0 auto;
         overflow-y: scroll;
         overflow-x: hidden;
+        transition: none;
     }
     @media (width <= 768px) {
         min-height: 100dvh;
@@ -15,6 +19,23 @@
     h1,
     p {
         word-wrap: break-all;
+    }
+}
+
+.sidebar-resize-handle {
+    display: none;
+
+    @media (width > 768px) {
+        display: flex;
+        width: 8px;
+        cursor: col-resize;
+        touch-action: none;
+        background-color: $light-miku;
+        &:hover,
+        &:focus-visible {
+            background-color: $dark-miku;
+            outline: none;
+        }
     }
 }
 

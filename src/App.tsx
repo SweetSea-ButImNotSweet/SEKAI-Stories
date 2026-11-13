@@ -10,6 +10,7 @@ import { SceneContext } from "./contexts/SceneContext";
 import { makeSceneJson } from "./utils/MakeSceneJson";
 import { IJsonSave } from "./types/IJsonSave";
 import DeveloperBar from "./components/UI/DeveloperBar";
+import SidebarResizeBar from "./components/UI/SidebarResizeBar";
 
 function App() {
     const { playSound } = useAudioManager();
@@ -143,6 +144,7 @@ function App() {
         <main className={`app-${lang}`} id="app">
             <Content />
             <DeveloperBar />
+            <SidebarResizeBar />
             {!hide && <Sidebar />}
             {showAnnouncements && <Announcements />}
             <Loading />
