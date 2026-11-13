@@ -42,8 +42,8 @@ export default interface ISettingsContextType {
     setStartingBoxType: Dispatch<SetStateAction<"default" | "classic">>;
     customDefaultScene: ICustomDefaultScene | null;
     setCustomDefaultScene: Dispatch<SetStateAction<ICustomDefaultScene | null>>;
-    customDefaultSceneBool: boolean;
-    setCustomDefaultSceneBool: Dispatch<SetStateAction<boolean>>;
+    customCanvas: boolean;
+    setCustomCanvas: Dispatch<SetStateAction<boolean>>;
     loading: number;
     setLoading: Dispatch<SetStateAction<number>>;
     roleplaySprites: IRoleplaySpriteCharacters;

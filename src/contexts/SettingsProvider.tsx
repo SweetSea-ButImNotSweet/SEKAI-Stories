@@ -43,8 +43,7 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
         "default" | "classic"
     >("default");
     const [loading, setLoading] = useState<number>(0);
-    const [customDefaultSceneBool, setCustomDefaultSceneBool] =
-        useState<boolean>(false);
+    const [customCanvas, setCustomCanvas] = useState<boolean>(false);
     const [customDefaultScene, setCustomDefaultScene] =
         useState<ICustomDefaultScene | null>(null);
     const [roleplaySprites, setRoleplaySprites] =
@@ -87,11 +86,11 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
         if (blankCanvasCookie === "true") {
             setBlankCanvas(true);
         }
-        const customDefaultSceneCookie = localStorage.getItem(
-            "customDefaultSceneBool",
-        );
-        if (customDefaultSceneCookie === "true") {
-            setCustomDefaultSceneBool(true);
+        const customCanvasCookie =
+            localStorage.getItem("customCanvas") ??
+            localStorage.getItem("customDefaultSceneBool");
+        if (customCanvasCookie === "true") {
+            setCustomCanvas(true);
         }
         const easySwitchEnabled = localStorage.getItem("easySwitchEnabled");
         if (easySwitchEnabled === "true") {
@@ -190,8 +189,8 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
                 setAudio,
                 startingBoxType,
                 setStartingBoxType,
-                customDefaultSceneBool,
-                setCustomDefaultSceneBool,
+                customCanvas,
+                setCustomCanvas,
                 customDefaultScene,
                 setCustomDefaultScene,
                 loading,

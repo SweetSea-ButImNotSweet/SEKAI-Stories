@@ -35,7 +35,7 @@ export const SceneProvider: React.FC<SceneProviderProps> = ({ children }) => {
         settingsLoaded,
         startingBoxType,
         customDefaultScene,
-        customDefaultSceneBool,
+        customCanvas,
     } = settings;
     const [app, setApp] = useState<PIXI.Application | undefined>(undefined);
     const [models, setModels] = useState<Record<string, IModel> | undefined>(
@@ -96,7 +96,7 @@ export const SceneProvider: React.FC<SceneProviderProps> = ({ children }) => {
             setLoadingMessage,
             setLoading,
             blankCanvas,
-            customCanvas: customDefaultSceneBool,
+            customCanvas,
             customScene: customDefaultScene,
         });
 

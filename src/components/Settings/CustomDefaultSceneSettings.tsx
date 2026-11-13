@@ -19,8 +19,8 @@ const CustomDefaultSceneSettings: React.FC = () => {
     const {
         customDefaultScene,
         setCustomDefaultScene,
-        customDefaultSceneBool,
-        setCustomDefaultSceneBool,
+        customCanvas,
+        setCustomCanvas,
     } = settings;
     const { setErrorInformation } = softError;
 
@@ -28,8 +28,8 @@ const CustomDefaultSceneSettings: React.FC = () => {
         e: React.ChangeEvent<HTMLInputElement>,
     ) => {
         const value = e.target.checked;
-        setCustomDefaultSceneBool(value);
-        localStorage.setItem("customDefaultSceneBool", String(value));
+        setCustomCanvas(value);
+        localStorage.setItem("customCanvas", String(value));
     };
 
     const updateCustomDefaultScene = (
@@ -54,7 +54,7 @@ const CustomDefaultSceneSettings: React.FC = () => {
         <SettingsGroup header={t("settings.custom-default-scene.header")}>
             <p>{t("settings.custom-default-scene.description")}</p>
 
-            {customDefaultSceneBool && (
+            {customCanvas && (
                 <>
                     <p>{t("settings.custom-default-scene.note")}</p>
                     <h3>{t("text.name-tag.header")}</h3>
@@ -102,7 +102,7 @@ const CustomDefaultSceneSettings: React.FC = () => {
             <Checkbox
                 id="audio"
                 label={t("global.enable")}
-                checked={customDefaultSceneBool}
+                checked={customCanvas}
                 onChange={handleCustomDefaultToggle}
             />
         </SettingsGroup>

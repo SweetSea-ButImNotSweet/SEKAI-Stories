@@ -25,7 +25,7 @@ const StartingBoxTypeSettings: React.FC = () => {
         setBlankCanvas,
         audio,
         setAudio,
-        customDefaultSceneBool,
+        customCanvas,
     } = settings;
 
     const mentalHealthCookie =
@@ -82,7 +82,7 @@ const StartingBoxTypeSettings: React.FC = () => {
                 label={t("settings.blank-canvas")}
                 checked={blankCanvas}
                 onChange={handleBlankCanvas}
-                disabled={customDefaultSceneBool}
+                disabled={customCanvas}
             />
             <Checkbox
                 id="expand"

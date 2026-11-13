@@ -25,8 +25,7 @@ const Experimental: React.FC = () => {
     if (!scene || !softError || !settings) throw new Error("Context not found");
     const { loadingMessage, setLoadingMessage } = scene;
     const { setErrorInformation } = softError;
-    const { loading, setLoading, customDefaultScene, customDefaultSceneBool } =
-        settings;
+    const { loading, setLoading, customDefaultScene, customCanvas } = settings;
     const [number, setNumber] = useState(0);
     const [image, setImage] = useState<Blob | null>(null);
     const [rpImage, setRPImage] = useState<Blob | null>(null);
@@ -368,10 +367,7 @@ const Experimental: React.FC = () => {
             <div className="option">
                 <h2>Custom Default Scene Test</h2>
                 <div className="option__content">
-                    <p>
-                        Status:{" "}
-                        {customDefaultSceneBool ? "Enabled" : "Disabled"}
-                    </p>
+                    <p>Status: {customCanvas ? "Enabled" : "Disabled"}</p>
                     {customDefaultScene ? (
                         <div className="flex-vertical">
                             {customSceneImageUrls.background ? (
