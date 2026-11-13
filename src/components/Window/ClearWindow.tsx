@@ -17,7 +17,7 @@ const ClearWindow: React.FC<ClearWindowProps> = ({ setShow }) => {
     if (!scene || !settings) throw new Error("Context not found");
 
     const { reset, setReset } = scene;
-    const { blankCanvas, setBlankCanvas } = settings;
+    const { blankCanvas, setBlankCanvas, customCanvas } = settings;
 
     const handleBlankCanvas = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.checked;
@@ -37,14 +37,14 @@ const ClearWindow: React.FC<ClearWindowProps> = ({ setShow }) => {
                     <h3 className="text-center">{t("clear.message")}</h3>
                 </div>
                 <div className="windown__divider center">
-                    {
+                    {!customCanvas && (
                         <Checkbox
                             id="stop-show"
                             label={t("clear.start-blank")}
                             checked={blankCanvas}
                             onChange={handleBlankCanvas}
                         />
-                    }
+                    )}
                 </div>
             </div>
         </Window>

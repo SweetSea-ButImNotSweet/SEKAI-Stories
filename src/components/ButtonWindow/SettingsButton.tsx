@@ -9,6 +9,7 @@ import StartingBoxTypeSettings from "../Settings/StartingBoxTypeSettings";
 import TutorialSettings from "../Settings/TutorialSettings";
 import AutosaveSettings from "../Settings/AutosaveSettings";
 import TogglesSettings from "../Settings/TogglesSettings";
+import CustomDefaultSceneSettings from "../Settings/CustomDefaultSceneSettings";
 
 const SettingsButton: React.FC = () => {
     const { t } = useTranslation();
@@ -56,6 +57,7 @@ const SettingsButton: React.FC = () => {
                         <StartingBoxTypeSettings />
                         <AutosaveSettings />
                         <TutorialSettings setShow={setShow} />
+                        <CustomDefaultSceneSettings />
                         <TogglesSettings />
                         <div
                             className="window__divider center flex flex-vertical"

@@ -6,10 +6,20 @@ import { IBackgroundBookmark } from "../types/IBackgroundBookmark";
 import { SoftErrorContext } from "./SoftErrorContext";
 import { IRoleplaySpriteCharacters } from "../types/IRoleplaySprites";
 import localforage from "localforage";
+import { ICustomDefaultScene } from "../types/ICustomDefaultScene";
 
 interface SidebarProviderProps {
     children: React.ReactNode;
 }
+
+const getBooleanPreference = (
+    key: string,
+    defaultValue = false,
+): boolean => {
+    const storedValue = localStorage.getItem(key);
+    return storedValue ? storedValue === "true" : defaultValue;
+};
+
 export const SettingsProvider: React.FC<SidebarProviderProps> = ({
     children,
 }) => {
@@ -42,6 +52,9 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
         "default" | "classic"
     >("default");
     const [loading, setLoading] = useState<number>(0);
+    const [customCanvas, setCustomCanvas] = useState<boolean>(false);
+    const [customDefaultScene, setCustomDefaultScene] =
+        useState<ICustomDefaultScene | null>(null);
     const [roleplaySprites, setRoleplaySprites] =
         useState<IRoleplaySpriteCharacters>([]);
     const [settingsLoaded, setSettingsLoaded] = useState<boolean>(false);
@@ -55,37 +68,19 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
         if (Number(announcementCookie) < 1) {
             setShowAnnouncements(true);
         }
-        const openAllCookie = localStorage.getItem("openAll");
-        if (openAllCookie === "true") {
-            setOpenAll(true);
-        }
-        const showTutorialCookie = localStorage.getItem(
-            "showTutorialAndSetup-v3",
+        setOpenAll(getBooleanPreference("openAll"));
+        setShowTutorial(getBooleanPreference("showTutorialAndSetup-v3", true));
+        setAudio(getBooleanPreference("audio", true));
+        setShowSaveDialog(getBooleanPreference("saveDialog", true));
+        setShowMentalHealthWindow(
+            getBooleanPreference("mentalHealthWindow", true),
         );
-        if (!showTutorialCookie || showTutorialCookie === "true") {
-            setShowTutorial(true);
-        }
-        const audioCookie = localStorage.getItem("audio");
-        if (!audioCookie || audioCookie === "true") {
-            setAudio(true);
-        }
-        const saveDialogCookie = localStorage.getItem("saveDialog");
-        if (!saveDialogCookie || saveDialogCookie === "true") {
-            setShowSaveDialog(true);
-        }
-        const mentalHealthWindowCookie =
-            localStorage.getItem("mentalHealthWindow");
-        if (!mentalHealthWindowCookie || mentalHealthWindowCookie === "true") {
-            setShowMentalHealthWindow(true);
-        }
-        const blankCanvasCookie = localStorage.getItem("blankCanvas");
-        if (blankCanvasCookie === "true") {
-            setBlankCanvas(true);
-        }
-        const easySwitchEnabled = localStorage.getItem("easySwitchEnabled");
-        if (easySwitchEnabled === "true") {
-            setEasySwitch(true);
-        }
+        setBlankCanvas(getBooleanPreference("blankCanvas"));
+        const customCanvasCookie =
+            localStorage.getItem("customCanvas") ??
+            localStorage.getItem("customDefaultSceneBool");
+        setCustomCanvas(customCanvasCookie === "true");
+        setEasySwitch(getBooleanPreference("easySwitchEnabled"));
         const storedNameTags = localStorage.getItem("nameTags");
         if (storedNameTags) {
             setNameTags(JSON.parse(storedNameTags));
@@ -118,13 +113,22 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
             );
             localStorage.setItem("startingBoxType", "default");
         }
-        localforage.getItem("roleplaySprites").then((value) => {
-            if (value) {
-                setRoleplaySprites(value as IRoleplaySpriteCharacters);
-            }
-        });
-
-        setSettingsLoaded(true);
+        Promise.all([
+            localforage.getItem("roleplaySprites"),
+            localforage.getItem("customDefaultScene"),
+        ])
+            .then(([sprites, customScene]) => {
+                if (sprites) {
+                    setRoleplaySprites(sprites as IRoleplaySpriteCharacters);
+                }
+                setCustomDefaultScene(
+                    customScene as ICustomDefaultScene | null,
+                );
+            })
+            .catch((loadError) => {
+                console.error("Failed to load saved settings:", loadError);
+            })
+            .finally(() => setSettingsLoaded(true));
     }, []);
 
     useEffect(() => {
@@ -170,6 +174,10 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
                 setAudio,
                 startingBoxType,
                 setStartingBoxType,
+                customCanvas,
+                setCustomCanvas,
+                customDefaultScene,
+                setCustomDefaultScene,
                 loading,
                 roleplaySprites,
                 setRoleplaySprites,

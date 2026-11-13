@@ -639,6 +639,18 @@
             "modelFile": "v2_05_minori_fancostume_t06.model3.json"
         },
         {
+            "modelName": "v2_05_minori_fancostume_t06_live01",
+            "modelBase": "v2_05minori_fancostume_live01",
+            "modelPath": "v2/main/05_minori/v2_05minori_fancostume_live01",
+            "modelFile": "v2_05_minori_fancostume_t06_live01.model3.json"
+        },
+        {
+            "modelName": "v2_05_minori_fancostume_t06_live02",
+            "modelBase": "v2_05minori_fancostume_live02",
+            "modelPath": "v2/main/05_minori/v2_05minori_fancostume_live02",
+            "modelFile": "v2_05_minori_fancostume_t06_live02.model3.json"
+        },
+        {
             "modelName": "v2_05_minori_lesson_t05",
             "modelBase": "v2_05minori_lesson",
             "modelPath": "v2/main/05_minori/v2_05minori_lesson",
@@ -833,6 +845,18 @@
             "modelFile": "v2_06haruka_fancostume_t04.model3.json"
         },
         {
+            "modelName": "v2_06haruka_fancostume_t04_live01",
+            "modelBase": "v2_06haruka_fancostume_live01",
+            "modelPath": "v2/main/06_haruka/v2_06haruka_fancostume_live01",
+            "modelFile": "v2_06haruka_fancostume_t04_live01.model3.json"
+        },
+        {
+            "modelName": "v2_06haruka_fancostume_t04_live02",
+            "modelBase": "v2_06haruka_fancostume_live02",
+            "modelPath": "v2/main/06_haruka/v2_06haruka_fancostume_live02",
+            "modelFile": "v2_06haruka_fancostume_t04_live02.model3.json"
+        },
+        {
             "modelName": "v2_06_haruka_lesson_t04",
             "modelBase": "v2_06haruka_lesson",
             "modelPath": "v2/main/06_haruka/v2_06haruka_lesson",
@@ -985,6 +1009,18 @@
             "modelFile": "v2_07_airi_fancostume_t03.model3.json"
         },
         {
+            "modelName": "v2_07_airi_fancostume_t03_live01",
+            "modelBase": "v2_07airi_fancostume_live01",
+            "modelPath": "v2/main/07_airi/v2_07airi_fancostume_live01",
+            "modelFile": "v2_07_airi_fancostume_t03_live01.model3.json"
+        },
+        {
+            "modelName": "v2_07_airi_fancostume_t03_live02",
+            "modelBase": "v2_07airi_fancostume_live02",
+            "modelPath": "v2/main/07_airi/v2_07airi_fancostume_live02",
+            "modelFile": "v2_07_airi_fancostume_t03_live02.model3.json"
+        },
+        {
             "modelName": "v2_07_airi_lesson_t06",
             "modelBase": "v2_07airi_lesson",
             "modelPath": "v2/main/07_airi/v2_07airi_lesson",
@@ -1129,6 +1165,18 @@
             "modelBase": "v2_08shizuku_fancostume",
             "modelPath": "v2/main/08_shizuku/v2_08shizuku_fancostume",
             "modelFile": "v2_08shizuku_fancostume_t04.model3.json"
+        },
+        {
+            "modelName": "v2_08shizuku_fancostume_t04_live01",
+            "modelBase": "v2_08shizuku_fancostume_live01",
+            "modelPath": "v2/main/08_shizuku/v2_08shizuku_fancostume_live01",
+            "modelFile": "v2_08shizuku_fancostume_t04_live01.model3.json"
+        },
+        {
+            "modelName": "v2_08shizuku_fancostume_t04_live02",
+            "modelBase": "v2_08shizuku_fancostume_live02",
+            "modelPath": "v2/main/08_shizuku/v2_08shizuku_fancostume_live02",
+            "modelFile": "v2_08shizuku_fancostume_t04_live02.model3.json"
         },
         {
             "modelName": "v2_08shizuku_fancostume_zoom_t03",
@@ -1959,6 +2007,12 @@
             "modelFile": "v2_14emu_unit2_t07.model3.json"
         },
         {
+            "modelName": "v2_14emu_unit2_t08",
+            "modelBase": "v2_14emu_unit",
+            "modelPath": "v2/main/14_emu/v2_14emu_unit",
+            "modelFile": "v2_14emu_unit2_t08.model3.json"
+        },
+        {
             "modelName": "v2_14emu_unit2_t05_black",
             "modelBase": "v2_14emu_unit_black",
             "modelPath": "v2/main/14_emu/v2_14emu_unit_black",
@@ -2409,6 +2463,12 @@
             "modelBase": "v2_18mafuyu_april2026",
             "modelPath": "v2/main/18_mafuyu/v2_18mafuyu_april2026",
             "modelFile": "v2_18mafuyu_april2026_t02.model3.json"
+        },
+        {
+            "modelName": "v2_18mafuyu_archery_t03",
+            "modelBase": "v2_18mafuyu_archery",
+            "modelPath": "v2/main/18_mafuyu/v2_18mafuyu_archery",
+            "modelFile": "v2_18mafuyu_archery_t03.model3.json"
         },
         {
             "modelName": "v2_18mafuyu_casual_t03",
@@ -3929,10 +3989,22 @@
             "modelFile": "sub_arisa_t02.model3.json"
         },
         {
+            "modelName": "sub_arisa_t06",
+            "modelBase": "sub_arisa",
+            "modelPath": "v1/sub/sub_arisa",
+            "modelFile": "sub_arisa_t06.model3.json"
+        },
+        {
             "modelName": "sub_arisa02_t03",
             "modelBase": "sub_arisa02",
             "modelPath": "v1/sub/sub_arisa02",
             "modelFile": "sub_arisa02_t03.model3.json"
+        },
+        {
+            "modelName": "sub_arisa02_t05",
+            "modelBase": "sub_arisa02",
+            "modelPath": "v1/sub/sub_arisa02",
+            "modelFile": "sub_arisa02_t05.model3.json"
         },
         {
             "modelName": "sub_arisa_lesson02_t02",
@@ -3941,10 +4013,34 @@
             "modelFile": "sub_arisa_lesson02_t02.model3.json"
         },
         {
+            "modelName": "sub_arisa02_t04_live01",
+            "modelBase": "sub_arisa02_live01",
+            "modelPath": "v1/sub/sub_arisa02_live01",
+            "modelFile": "sub_arisa02_t04_live01.model3.json"
+        },
+        {
+            "modelName": "sub_arisa02_t04_live02",
+            "modelBase": "sub_arisa02_live02",
+            "modelPath": "v1/sub/sub_arisa02_live02",
+            "modelFile": "sub_arisa02_t04_live02.model3.json"
+        },
+        {
             "modelName": "sub_arisa_lesson_t02",
             "modelBase": "sub_arisa_lesson",
             "modelPath": "v1/sub/sub_arisa_lesson",
             "modelFile": "sub_arisa_lesson_t02.model3.json"
+        },
+        {
+            "modelName": "sub_arisa_t05_live01",
+            "modelBase": "sub_arisa_live01",
+            "modelPath": "v1/sub/sub_arisa_live01",
+            "modelFile": "sub_arisa_t05_live01.model3.json"
+        },
+        {
+            "modelName": "sub_arisa_t05_live02",
+            "modelBase": "sub_arisa_live02",
+            "modelPath": "v1/sub/sub_arisa_live02",
+            "modelFile": "sub_arisa_t05_live02.model3.json"
         },
         {
             "modelName": "sub_arisablack_t01",
