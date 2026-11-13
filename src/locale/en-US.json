@@ -12,7 +12,8 @@
         "enter-value": "Enter a value.",
         "visible": "Visible",
         "import": "Import",
-        "export": "Export"
+        "export": "Export",
+        "enable": "Enable"
     },
     "background": {
         "header": "Background",
@@ -308,6 +309,14 @@
         "guidelines": "Show guidelines",
         "experimental": "Show experimental",
         "expand": "Expand all menu options",
+        "custom-default-scene": {
+            "header": "Custom Default Scene",
+            "description": "Change the default scene as you start SEKAI Stories.",
+            "note": "A custom default scene needs a background and a sprite. The toggle for blank canvas will not take effect.",
+            "images": "Images",
+            "upload-sprite": "Upload Sprite",
+            "upload-background": "Upload Background"
+        },
         "tutorial": "Tutorial",
         "show-tutorial": "Show one more time",
         "mental-health-window": "Show mental health warning",
