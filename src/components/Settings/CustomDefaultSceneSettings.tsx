@@ -53,7 +53,6 @@ const CustomDefaultSceneSettings: React.FC = () => {
     return (
         <SettingsGroup header={t("settings.custom-default-scene.header")}>
             <p>{t("settings.custom-default-scene.description")}</p>
-
             {customCanvas && (
                 <>
                     <p>{t("settings.custom-default-scene.note")}</p>
@@ -75,8 +74,16 @@ const CustomDefaultSceneSettings: React.FC = () => {
                                 dialogue: event.target.value,
                             })
                         }
+                        id="dialogue"
                     />
                     <h3>{t("settings.custom-default-scene.images")}</h3>
+                    {(!customDefaultScene?.background ||
+                        !customDefaultScene?.sprite) && (
+                        <p>
+                            <i className="bi bi-exclamation-triangle-fill red" />{" "}
+                            {t("settings.custom-default-scene.warning")}
+                        </p>
+                    )}
                     <UploadImageButton
                         text={t(
                             "settings.custom-default-scene.upload-background",
