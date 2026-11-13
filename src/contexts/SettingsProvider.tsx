@@ -11,6 +11,15 @@ import { ICustomDefaultScene } from "../types/ICustomDefaultScene";
 interface SidebarProviderProps {
     children: React.ReactNode;
 }
+
+const getBooleanPreference = (
+    key: string,
+    defaultValue = false,
+): boolean => {
+    const storedValue = localStorage.getItem(key);
+    return storedValue ? storedValue === "true" : defaultValue;
+};
+
 export const SettingsProvider: React.FC<SidebarProviderProps> = ({
     children,
 }) => {
@@ -59,43 +68,19 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
         if (Number(announcementCookie) < 1) {
             setShowAnnouncements(true);
         }
-        const openAllCookie = localStorage.getItem("openAll");
-        if (openAllCookie === "true") {
-            setOpenAll(true);
-        }
-        const showTutorialCookie = localStorage.getItem(
-            "showTutorialAndSetup-v3",
+        setOpenAll(getBooleanPreference("openAll"));
+        setShowTutorial(getBooleanPreference("showTutorialAndSetup-v3", true));
+        setAudio(getBooleanPreference("audio", true));
+        setShowSaveDialog(getBooleanPreference("saveDialog", true));
+        setShowMentalHealthWindow(
+            getBooleanPreference("mentalHealthWindow", true),
         );
-        if (!showTutorialCookie || showTutorialCookie === "true") {
-            setShowTutorial(true);
-        }
-        const audioCookie = localStorage.getItem("audio");
-        if (!audioCookie || audioCookie === "true") {
-            setAudio(true);
-        }
-        const saveDialogCookie = localStorage.getItem("saveDialog");
-        if (!saveDialogCookie || saveDialogCookie === "true") {
-            setShowSaveDialog(true);
-        }
-        const mentalHealthWindowCookie =
-            localStorage.getItem("mentalHealthWindow");
-        if (!mentalHealthWindowCookie || mentalHealthWindowCookie === "true") {
-            setShowMentalHealthWindow(true);
-        }
-        const blankCanvasCookie = localStorage.getItem("blankCanvas");
-        if (blankCanvasCookie === "true") {
-            setBlankCanvas(true);
-        }
+        setBlankCanvas(getBooleanPreference("blankCanvas"));
         const customCanvasCookie =
             localStorage.getItem("customCanvas") ??
             localStorage.getItem("customDefaultSceneBool");
-        if (customCanvasCookie === "true") {
-            setCustomCanvas(true);
-        }
-        const easySwitchEnabled = localStorage.getItem("easySwitchEnabled");
-        if (easySwitchEnabled === "true") {
-            setEasySwitch(true);
-        }
+        setCustomCanvas(customCanvasCookie === "true");
+        setEasySwitch(getBooleanPreference("easySwitchEnabled"));
         const storedNameTags = localStorage.getItem("nameTags");
         if (storedNameTags) {
             setNameTags(JSON.parse(storedNameTags));
