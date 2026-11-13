@@ -312,12 +312,13 @@
         "custom-default-scene": {
             "header": "Custom Default Scene",
             "description": "Change the default scene as you start SEKAI Stories.",
-            "note": "A custom default scene needs a background and a sprite. The toggle for blank canvas will not take effect.",
+            "note": "A custom default scene needs a background and a sprite for this to work. The toggle for blank canvas will not take effect.",
             "images": "Images",
             "upload-sprite": "Upload Sprite",
             "upload-background": "Upload Background",
             "upload-sprite-info": "To make sure the image fits inside the canvas, please use an image with at least 1080 pixels in height.",
-            "prompt": "This will take effect after clearing the canvas."
+            "prompt": "This will take effect after clearing the canvas.",
+            "warning": "There's no background or sprite set for the custom default scene."
         },
         "tutorial": "Tutorial",
         "show-tutorial": "Show one more time",
