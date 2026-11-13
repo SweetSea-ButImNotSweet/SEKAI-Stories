@@ -12,7 +12,8 @@
         "enter-value": "Nhập một giá trị.",
         "visible": "Hiện",
         "import": "Nhập",
-        "export": "Xuất"
+        "export": "Xuất",
+        "enable": "Kích hoạt"
     },
     "background": {
         "header": "Hình nền",
@@ -310,6 +311,17 @@
         "expand": "Luôn mở bung toàn bộ menu",
         "tutorial": "Hướng dẫn",
         "show-tutorial": "Cho mình xem lại lần nữa",
+        "custom-default-scene": {
+            "header": "Phân cảnh mặc định tự làm",
+            "description": "Dùng phân cảnh tự làm để làm mặc định khi mở SEKAI Stories lên.",
+            "note": "Nhớ là, một phân cảnh sẽ cần một hình nền và một tấm hình nhân vật nhé! Mà lưu ý: công tắc Luôn tạo canvas mới bằng canvas trống SẼ BỊ TẮT!",
+            "images": "Tải hình lên",
+            "upload-sprite": "Tải hình nhân vật lên",
+            "upload-background": "Tải hình nền lên",
+            "upload-sprite-info": "Nhớ tải hình có chiều cao ít nhất là 1080 px để đảm bảo là hình nhân vật vừa khớp với canvas nha!",
+            "prompt": "Cài đặt này sẽ được áp dụng lại vào lần xóa sạch canvas tới.",
+            "warning": "Hmm, bạn chưa tải hình nền hoặc hình nhân vật lên kìa!"
+        },
         "mental-health-window": "Hiện cảnh báo sức khỏe tâm thần",
         "save-dialog": "Hiện hộp thoại lưu ảnh",
         "blank-canvas": "Luôn tạo canvas mới bằng canvas trống",
