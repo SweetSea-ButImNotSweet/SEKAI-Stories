@@ -314,7 +314,7 @@
         "custom-default-scene": {
             "header": "Phân cảnh mặc định tự làm",
             "description": "Dùng phân cảnh tự làm để làm mặc định khi mở SEKAI Stories lên.",
-            "note": "Nhớ là, một phân cảnh sẽ cần một hình nền và một tấm hình nhân vật nhé! Mà lưu ý: công tắc Luôn tạo canvas mới bằng canvas trống SẼ BỊ TẮT!",
+            "note": "Đừng quên, một phân cảnh sẽ cần một hình nền và một tấm hình nhân vật nhé! Mà lưu ý: công tắc Luôn tạo canvas mới bằng canvas trống SẼ BỊ TẮT!",
             "images": "Tải hình lên",
             "upload-sprite": "Tải hình nhân vật lên",
             "upload-background": "Tải hình nền lên",
