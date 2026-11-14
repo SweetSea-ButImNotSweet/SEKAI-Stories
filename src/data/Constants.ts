@@ -1,6 +1,6 @@
 export const staticUrl = "/live2d";
 export const sekaiUrl = "https://storage.sekai.best/sekai-live2d-assets/live2d";
-export const announcementKey = "ph-banned-discord-announcement-lmao";
+export const announcementKey = "2026-11-15-announcement";
 export const textTypeYPositions = [
     [775, 845],
     [745, 825],
@@ -81,5 +81,9 @@ export const contributors: { img: string; link: string }[] = [
     {
         img: "https://avatars.githubusercontent.com/u/610876?v=4",
         link: "https://github.com/00dani",
+    },
+    {
+        img: "https://avatars.githubusercontent.com/u/106439598?v=4",
+        link: "https://github.com/SweetSea-ButImNotSweet",
     },
 ];

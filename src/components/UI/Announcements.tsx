@@ -21,9 +21,30 @@ const Announcements: React.FC = () => {
 
     return (
         <div id="announcements" onClick={handleAnnouncements}>
-            <h2>lmao</h2>
-            <p>nvm guys, this government is playing jokes with us.</p>
-            <p>discord ban is lifted.</p>
+            <h2>Notice</h2>
+            <p>Few updates have been made!</p>
+            <ul>
+                <li>
+                    Vietnamese translation has been added! Thanks to{" "}
+                    <a
+                        href="https://github.com/SweetSea-ButImNotSweet"
+                        target="_blank"
+                    >
+                        SweetSea
+                    </a>{" "}
+                    for their contribution!
+                </li>
+                <li>Vietnamese text are now supported in the canvas!</li>
+                <li>You can now resize the sidebar on desktop!</li>
+                <li>
+                    Custom default scene has been added on Settings! You can set
+                    what scene you would like when starting SEKAI Stories.
+                </li>
+            </ul>
+            <p>
+                Holiday season is nearing! Which means, I will be setting a
+                contest for another SEKAI Stories One-shot: Christmas Edition!
+            </p>
             <p>Tap this section to close.</p>
         </div>
     );

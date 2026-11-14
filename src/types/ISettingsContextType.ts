@@ -48,5 +48,7 @@ export default interface ISettingsContextType {
     setLoading: Dispatch<SetStateAction<number>>;
     roleplaySprites: IRoleplaySpriteCharacters;
     setRoleplaySprites: Dispatch<SetStateAction<IRoleplaySpriteCharacters>>;
+    sidebarWidth: number;
+    setSidebarWidth: Dispatch<SetStateAction<number>>;
     settingsLoaded: boolean;
 }

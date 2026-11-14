@@ -12,10 +12,7 @@ interface SidebarProviderProps {
     children: React.ReactNode;
 }
 
-const getBooleanPreference = (
-    key: string,
-    defaultValue = false,
-): boolean => {
+const getBooleanPreference = (key: string, defaultValue = false): boolean => {
     const storedValue = localStorage.getItem(key);
     return storedValue ? storedValue === "true" : defaultValue;
 };
@@ -57,6 +54,7 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
         useState<ICustomDefaultScene | null>(null);
     const [roleplaySprites, setRoleplaySprites] =
         useState<IRoleplaySpriteCharacters>([]);
+    const [sidebarWidth, setSidebarWidth] = useState(260);
     const [settingsLoaded, setSettingsLoaded] = useState<boolean>(false);
 
     useEffect(() => {
@@ -113,6 +111,14 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
             );
             localStorage.setItem("startingBoxType", "default");
         }
+
+        const savedWidth = Number(localStorage.getItem("sidebarWidth"));
+        const maxWidth = Math.min(625, window.innerWidth * 0.45);
+        setSidebarWidth(
+            Number.isFinite(savedWidth) && savedWidth > 0
+                ? Math.max(300, Math.min(maxWidth, savedWidth))
+                : 300,
+        );
         Promise.all([
             localforage.getItem("roleplaySprites"),
             localforage.getItem("customDefaultScene"),
@@ -181,6 +187,8 @@ export const SettingsProvider: React.FC<SidebarProviderProps> = ({
                 loading,
                 roleplaySprites,
                 setRoleplaySprites,
+                sidebarWidth,
+                setSidebarWidth,
                 setLoading,
                 settingsLoaded,
             }}
